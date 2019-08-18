@@ -1,0 +1,272 @@
+2019-06-24 12:44:18;set names utf8;
+2019-06-24 12:44:18;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 12:44:19;set names utf8;
+2019-06-24 12:44:19;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 12:44:40;set names utf8;
+2019-06-24 12:44:40;INSERT INTO Zone SET ID_Sheet="0",
+                    ID_Zone="1", 
+                    Name="", 
+                    Colour="16764108";
+2019-06-24 12:44:43;set names utf8;
+2019-06-24 12:44:43;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 12:44:44;set names utf8;
+2019-06-24 12:44:44;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 12:44:59;set names utf8;
+2019-06-24 12:44:59;INSERT INTO Zone SET ID_Sheet="0",
+                    ID_Zone="1", 
+                    Name="", 
+                    Colour="16764108";
+2019-06-24 12:45:30;set names utf8;
+2019-06-24 12:45:30;INSERT INTO ZoneEditor SET 
+            SheetName="",
+            CentreLatitude="",
+            CentreLongitude="",
+            ZoomLevel="6";
+2019-06-24 12:45:38;set names utf8;
+2019-06-24 12:45:38;INSERT INTO ZoneEditor SET 
+            SheetName="",
+            CentreLatitude="",
+            CentreLongitude="",
+            ZoomLevel="6";
+2019-06-24 12:45:42;set names utf8;
+2019-06-24 12:45:42;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 12:45:43;set names utf8;
+2019-06-24 12:45:43;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 12:45:50;set names utf8;
+2019-06-24 12:45:50;INSERT INTO ZoneEditor SET 
+            SheetName="",
+            CentreLatitude="",
+            CentreLongitude="",
+            ZoomLevel="6";
+2019-06-24 12:46:04;set names utf8;
+2019-06-24 12:46:04;INSERT INTO ZoneEditor SET 
+            SheetName="",
+            CentreLatitude="",
+            CentreLongitude="",
+            ZoomLevel="6";
+2019-06-24 12:48:25;set names utf8;
+2019-06-24 12:48:25;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 12:48:26;set names utf8;
+2019-06-24 12:48:26;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 12:48:36;set names utf8;
+2019-06-24 12:48:36;INSERT INTO ZoneEditor SET 
+            SheetName="",
+            CentreLatitude="",
+            CentreLongitude="",
+            ZoomLevel="6";
+2019-06-24 12:48:44;set names utf8;
+2019-06-24 12:48:44;INSERT INTO Zone SET ID_Sheet="0",
+                    ID_Zone="1", 
+                    Name="", 
+                    Colour="16764108";
+2019-06-24 12:48:52;set names utf8;
+2019-06-24 12:48:52;UPDATE Zone SET Zone=PolyFromText("POLYGON((53.76664105596396 -8.067957329273213,53.67563011930947 -4.640222954273213,52.25982355677319 -5.387293266773213,53.76664105596396 -8.067957329273213))") 
+                    WHERE ID_ZoneCode="0";
+2019-06-24 12:49:03;set names utf8;
+2019-06-24 12:49:03;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 12:49:05;set names utf8;
+2019-06-24 12:49:05;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 12:49:48;set names utf8;
+2019-06-24 12:49:48;INSERT INTO ZoneEditor SET 
+            SheetName="",
+            CentreLatitude="",
+            CentreLongitude="",
+            ZoomLevel="6";
+2019-06-24 12:50:59;set names utf8;
+2019-06-24 12:50:59;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 12:51:00;set names utf8;
+2019-06-24 12:51:00;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 12:51:10;set names utf8;
+2019-06-24 12:51:10;INSERT INTO ZoneEditor SET 
+            SheetName="",
+            CentreLatitude="",
+            CentreLongitude="",
+            ZoomLevel="6";
+2019-06-24 12:55:24;set names utf8;
+2019-06-24 12:55:24;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 12:55:25;set names utf8;
+2019-06-24 12:55:25;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 12:55:40;set names utf8;
+2019-06-24 12:55:40;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 12:55:41;set names utf8;
+2019-06-24 12:55:41;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 12:55:48;set names utf8;
+2019-06-24 12:56:04;set names utf8;
+2019-06-24 12:56:04;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 12:56:04;set names utf8;
+2019-06-24 12:56:04;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 12:56:10;set names utf8;
+2019-06-24 12:57:22;set names utf8;
+2019-06-24 12:59:15;set names utf8;
+2019-06-24 12:59:15;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 12:59:16;set names utf8;
+2019-06-24 12:59:16;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 12:59:22;set names utf8;
+2019-06-24 12:59:22;INSERT INTO Zone SET ID_Sheet="0",
+                    ID_Zone="1", 
+                    Name="", 
+                    Colour="45824";
+2019-06-24 12:59:29;set names utf8;
+2019-06-24 12:59:29;UPDATE Zone SET Zone=PolyFromText("POLYGON((54.25727063155748 -8.331629204273213,52.72804610998883 -12.638269829273213,51.8273626684436 -4.881922173023213,54.25727063155748 -8.331629204273213))") 
+                    WHERE ID_ZoneCode="0";
+2019-06-24 12:59:45;set names utf8;
+2019-06-24 12:59:45;INSERT INTO Zone SET ID_Sheet="0",
+                    ID_Zone="2", 
+                    Name="", 
+                    Colour="16744576";
+2019-06-24 13:00:02;set names utf8;
+2019-06-24 13:00:02;UPDATE Zone SET Zone=PolyFromText("POLYGON((53.81855890858011 1.665929389476787,53.01980990498602 -0.04793779802321296,52.3941103165765 2.127355170726787,53.81855890858011 1.665929389476787))") 
+                    WHERE ID_ZoneCode="0";
+2019-06-24 13:01:20;set names utf8;
+2019-06-24 13:01:20;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 13:01:21;set names utf8;
+2019-06-24 13:01:21;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 13:01:32;set names utf8;
+2019-06-24 13:02:05;set names utf8;
+2019-06-24 13:02:05;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 13:02:06;set names utf8;
+2019-06-24 13:02:06;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 13:02:14;set names utf8;
+2019-06-24 13:02:14;INSERT INTO ZoneEditor SET 
+            SheetName="",
+            CentreLatitude="",
+            CentreLongitude="",
+            ZoomLevel="6";
+2019-06-24 13:12:56;set names utf8;
+2019-06-24 13:12:56;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 13:12:57;set names utf8;
+2019-06-24 13:12:57;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 13:13:14;set names utf8;
+2019-06-24 13:13:14;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 13:13:15;set names utf8;
+2019-06-24 13:13:15;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 13:13:53;set names utf8;
+2019-06-24 13:13:53;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 13:13:54;set names utf8;
+2019-06-24 13:13:54;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 13:15:39;set names utf8;
+2019-06-24 13:15:39;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 13:15:40;set names utf8;
+2019-06-24 13:15:40;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 14:13:53;set names utf8;
+2019-06-24 14:13:53;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 14:13:54;set names utf8;
+2019-06-24 14:13:54;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 14:17:16;set names utf8;
+2019-06-24 14:17:16;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 14:17:17;set names utf8;
+2019-06-24 14:17:17;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 14:18:42;set names utf8;
+2019-06-24 14:18:42;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 14:18:43;set names utf8;
+2019-06-24 14:18:43;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 14:21:02;set names utf8;
+2019-06-24 14:21:02;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 14:21:03;set names utf8;
+2019-06-24 14:21:03;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 14:21:57;set names utf8;
+2019-06-24 14:21:57;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 14:21:58;set names utf8;
+2019-06-24 14:21:58;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 14:32:28;set names utf8;
+2019-06-24 14:32:28;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 14:32:29;set names utf8;
+2019-06-24 14:32:29;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 14:32:46;set names utf8;
+2019-06-24 14:32:46;UPDATE ZoneEditor SET 
+            SheetName="",
+            CentreLatitude="",
+            CentreLongitude="",
+            ZoomLevel="6"
+            WHERE ID_ZoneEditor = 0;
+2019-06-24 14:33:12;set names utf8;
+2019-06-24 14:33:12;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 14:33:13;set names utf8;
+2019-06-24 14:33:13;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 14:39:52;set names utf8;
+2019-06-24 14:39:52;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 14:39:53;set names utf8;
+2019-06-24 14:39:53;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM Zone WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 14:43:53;set names utf8;
+2019-06-24 14:43:53;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 14:44:06;set names utf8;
+2019-06-24 14:44:06;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 14:45:16;set names utf8;
+2019-06-24 14:45:16;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 14:46:14;set names utf8;
+2019-06-24 14:46:14;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 14:56:27;set names utf8;
+2019-06-24 14:56:27;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 14:58:18;set names utf8;
+2019-06-24 14:58:18;DELETE FROM ZoneEditor WHERE ID_ZoneEditor = 0;
+2019-06-24 15:07:47;set names utf8;
+2019-06-24 15:07:47;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 15:07:59;set names utf8;
+2019-06-24 15:07:59;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 15:08:45;set names utf8;
+2019-06-24 15:08:45;SELECT * FROM ZoneEditor ORDER BY ID_ZoneEditor;
+2019-06-24 15:14:03;set names utf8;
+2019-06-24 15:14:03;SELECT * FROM sb_ZoneEditor_tbl ORDER BY ID_ZoneEditor;
+2019-06-24 15:14:29;set names utf8;
+2019-06-24 15:14:29;SELECT * FROM sb_ZoneEditor_tbl ORDER BY ID_ZoneEditor;
+2019-06-24 15:18:20;set names utf8;
+2019-06-24 15:18:20;SELECT * FROM sb_ZoneEditor_tbl ORDER BY ID_ZoneEditor;
+2019-06-24 15:20:27;set names utf8;
+2019-06-24 15:20:27;SELECT * FROM sb_ZoneEditor_tbl ORDER BY ID_ZoneEditor;
+2019-06-24 15:20:28;set names utf8;
+2019-06-24 15:20:28;SELECT * FROM sb_ZoneEditor_tbl ORDER BY ID_ZoneEditor;
+2019-06-24 15:21:05;set names utf8;
+2019-06-24 15:21:06;SELECT * FROM sb_ZoneEditor_tbl ORDER BY ID_ZoneEditor;
+2019-06-24 15:21:08;set names utf8;
+2019-06-24 15:21:08;SELECT * FROM sb_ZoneEditor_tbl ORDER BY ID_ZoneEditor;
+2019-06-24 15:21:54;set names utf8;
+2019-06-24 15:21:54;SELECT * FROM sb_ZoneEditor_tbl ORDER BY ID_ZoneEditor;
+2019-06-24 17:00:43;set names utf8;
+2019-06-24 17:00:43;SELECT * FROM sb_ZoneEditor_tbl ORDER BY ID_ZoneEditor;
+2019-06-24 17:00:44;set names utf8;
+2019-06-24 17:00:44;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM sb_Zone_tbl WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 17:00:55;set names utf8;
+2019-06-24 17:00:55;INSERT INTO sb_ZoneEditor_tbl SET 
+            SheetName="",
+            CentreLatitude="",
+		    CentreLongitude="",
+		    ZoomLevel="6";
+2019-06-24 17:01:01;set names utf8;
+2019-06-24 17:01:01;SELECT * FROM sb_ZoneEditor_tbl ORDER BY ID_ZoneEditor;
+2019-06-24 17:01:03;set names utf8;
+2019-06-24 17:01:03;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM sb_Zone_tbl WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 17:01:09;set names utf8;
+2019-06-24 17:01:09;UPDATE sb_ZoneEditor_tbl SET 
+            SheetName="",
+            CentreLatitude="",
+		    CentreLongitude="",
+		    ZoomLevel="6"
+		    WHERE ID_ZoneEditor = 0;
+2019-06-24 17:01:14;set names utf8;
+2019-06-24 17:01:14;INSERT INTO sb_Zone_tbl SET ID_Sheet="0",
+                    ID_Zone="1", 
+                    Name="", 
+                    Colour="13430527";
+2019-06-24 17:01:25;set names utf8;
+2019-06-24 17:01:25;UPDATE sb_Zone_tbl SET Colour="16757632" WHERE ID_ZoneCode="0";
+2019-06-24 17:01:27;set names utf8;
+2019-06-24 17:01:27;UPDATE sb_Zone_tbl SET Zone=PolyFromText("POLYGON((53.857455136839626 -8.199793266773213,53.125419629754035 -9.540125298023213,52.86090933016064 -7.342859673023213,53.857455136839626 -8.199793266773213))") 
+		            WHERE ID_ZoneCode="0";
+2019-06-24 17:01:36;set names utf8;
+2019-06-24 17:01:36;INSERT INTO sb_Zone_tbl SET ID_Sheet="0",
+                    ID_Zone="2", 
+                    Name="", 
+                    Colour="13382400";
+2019-06-24 17:01:42;set names utf8;
+2019-06-24 17:01:42;UPDATE sb_Zone_tbl SET Zone=PolyFromText("POLYGON((53.58442213028761 -3.277918266773213,53.17812739799143 -4.266687798023213,52.661462251414385 -2.706629204273213,53.58442213028761 -3.277918266773213))") 
+		            WHERE ID_ZoneCode="0";
+2019-06-24 17:02:01;set names utf8;
+2019-06-24 17:02:01;SELECT * FROM sb_ZoneEditor_tbl ORDER BY ID_ZoneEditor;
+2019-06-24 17:02:02;set names utf8;
+2019-06-24 17:02:02;SELECT ID_ZoneCode,ID_Zone,Name,Colour,AsText(Zone) AS poly FROM sb_Zone_tbl WHERE ID_Sheet = 0 ORDER BY ID_Zone;
+2019-06-24 17:02:11;set names utf8;
+2019-06-24 17:02:11;INSERT INTO sb_ZoneEditor_tbl SET 
+            SheetName="",
+            CentreLatitude="",
+		    CentreLongitude="",
+		    ZoomLevel="6";

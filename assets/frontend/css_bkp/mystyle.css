@@ -1,0 +1,897 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+ol {
+  margin: 0;
+  padding: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a,
+a:hover,
+a:focus,
+a:target {
+  text-decoration: none;
+  outline: none !important; }
+
+h1 {
+  font-size: 33px; }
+
+h2 {
+  font-size: 16px; }
+
+h3 {
+  font-size: 36px; }
+
+h4 {
+  font-size: 17px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 26px; }
+
+p {
+  font-size: 16px; }
+
+a {
+  font-size: 14px; }
+
+li {
+  font-size: 16px; }
+
+body {
+  font-family: "Roboto", sans-serif !important; }
+
+.navbar .my_menu li:nth-child(4):after {
+  content: "";
+  position: absolute;
+  background: #1097d6;
+  width: 2px;
+  height: 2px;
+  background-color: #cfcfcf;
+  right: 161px;
+  top: 35%;
+  height: calc(100% + -66px); }
+
+.navbar .navbar-nav > .active:before, .navbar .navbar-nav > li > a:before {
+  content: '';
+  position: absolute;
+  bottom: 9px;
+  background: #1097d6;
+  height: 3px;
+  width: 0;
+  left: 0;
+  -webkit-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all; }
+
+.navbar .navbar-nav > .active > a {
+  color: #1698d4 !important; }
+  .navbar .navbar-nav > .active > a::before {
+    position: absolute;
+    bottom: 9px;
+    width: 100%;
+    content: "";
+    height: 3px;
+    background-color: #1698d4; }
+
+.navbar .navbar-nav .nav-item a:hover:before, .navbar-default .navbar-nav .nav-item a.active:before {
+  width: 100%; }
+
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus, .navbar .navbar-nav li a span:hover {
+  color: #1097d6 !important;
+  background: none; }
+
+.my_menu_holder {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 8px #888888;
+  box-shadow: 0px 0px 8px #888888; }
+
+.navbar .desktop_navbrand {
+  display: none; }
+
+.navbar .navbar-toggle {
+  background: #6b7a97; }
+
+.navbar .my_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%; }
+
+.navbar .my_menu li {
+  margin-left: 18px; }
+
+.navbar .my_menu li a {
+  font-size: 16px;
+  padding: 0;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  font-family: "Roboto", sans-serif; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #595959 !important; }
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #1097d6; }
+
+.navbar .navbar-nav > li > a:hover {
+  color: #1097d6;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all; }
+
+.navbar .my_menu li a.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: transparent; }
+
+.menu_bottom {
+  background: url(../images/banner.png);
+  padding: 120px 0 70px 0;
+  height: 90vh;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .menu_bottom .menu_bottom_inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px; }
+    .menu_bottom .menu_bottom_inner .menu_bottom_inner_one {
+      background: #fa9f1b;
+      border-radius: 15px;
+      padding: 80px 0; }
+      .menu_bottom .menu_bottom_inner .menu_bottom_inner_one .menu_bottom_inner_one_picture {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .menu_bottom .menu_bottom_inner .menu_bottom_inner_one .menu_bottom_inner_one_picture img {
+          margin: 0 auto; }
+      .menu_bottom .menu_bottom_inner .menu_bottom_inner_one .menu_bottom_inner_one_text h1 {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #fff;
+        margin-top: 45px; }
+      .menu_bottom .menu_bottom_inner .menu_bottom_inner_one .menu_bottom_inner_one_text h2 {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        color: #fff;
+        margin-top: 10px; }
+    .menu_bottom .menu_bottom_inner .menu_bottom_inner_two {
+      background: #1698d4;
+      border-radius: 15px;
+      padding: 80px 0; }
+      .menu_bottom .menu_bottom_inner .menu_bottom_inner_two .menu_bottom_inner_one_picture {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .menu_bottom .menu_bottom_inner .menu_bottom_inner_two .menu_bottom_inner_one_picture img {
+          margin: 0 auto; }
+      .menu_bottom .menu_bottom_inner .menu_bottom_inner_two .menu_bottom_inner_one_text h1 {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #fff;
+        margin-top: 45px; }
+      .menu_bottom .menu_bottom_inner .menu_bottom_inner_two .menu_bottom_inner_one_text h2 {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        color: #fff;
+        margin-top: 10px; }
+    .menu_bottom .menu_bottom_inner .menu_bottom_inner_three {
+      background: #fff;
+      border-radius: 15px;
+      padding: 80px 0; }
+      .menu_bottom .menu_bottom_inner .menu_bottom_inner_three .menu_bottom_inner_one_picture {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .menu_bottom .menu_bottom_inner .menu_bottom_inner_three .menu_bottom_inner_one_picture img {
+          margin: 0 auto; }
+      .menu_bottom .menu_bottom_inner .menu_bottom_inner_three .menu_bottom_inner_one_text h1 {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: #1698d4;
+        margin-top: 45px; }
+      .menu_bottom .menu_bottom_inner .menu_bottom_inner_three .menu_bottom_inner_one_text h2 {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        color: #1698d4;
+        margin-top: 10px; }
+
+.airport_transport {
+  padding: 60px 0; }
+  .airport_transport .airport_transport_main_block {
+    height: 55px;
+    overflow: hidden;
+    position: relative; }
+    .airport_transport .airport_transport_main_block::after {
+      content: "";
+      position: absolute;
+      width: 72px;
+      height: 4px;
+      background-color: #fa9f1b;
+      top: 52px;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    .airport_transport .airport_transport_main_block h3 {
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      color: #888888;
+      font-weight: 400; }
+  .airport_transport .airport_transport_main_text {
+    overflow: hidden;
+    height: 120px; }
+    .airport_transport .airport_transport_main_text p {
+      text-align: center;
+      margin-top: 15px;
+      line-height: 1.4;
+      color: #454545; }
+
+.reason_of_book {
+  padding: 60px 0;
+  background: #1097d6; }
+  .reason_of_book .reason_of_book_text_box .reason_of_book_text_box_main_text {
+    height: 55px;
+    overflow: hidden;
+    position: relative; }
+    .reason_of_book .reason_of_book_text_box .reason_of_book_text_box_main_text::after {
+      content: "";
+      position: absolute;
+      width: 72px;
+      height: 4px;
+      background-color: #fa9f1b;
+      top: 52px;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    .reason_of_book .reason_of_book_text_box .reason_of_book_text_box_main_text h3 {
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      color: #fff;
+      font-weight: 400;
+      position: relative;
+      letter-spacing: 1px; }
+  .reason_of_book .reason_of_book_text_box .reason_of_book_text_box_main_text_box {
+    height: 110px;
+    overflow: hidden; }
+    .reason_of_book .reason_of_book_text_box .reason_of_book_text_box_main_text_box p {
+      text-align: center;
+      margin-top: 22px;
+      line-height: 1.4;
+      color: #fff; }
+  .reason_of_book .reason_of_book_text_box_inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    grid-gap: 141px;
+    margin-top: 15px; }
+    .reason_of_book .reason_of_book_text_box_inner .reason_of_book_text_box_inner_one .reason_of_book_text_box_inner_one_pic {
+      height: 100px;
+      width: 100px;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      overflow: hidden; }
+    .reason_of_book .reason_of_book_text_box_inner .reason_of_book_text_box_inner_one .reason_of_book_text_box_inner_one_text {
+      margin-top: 20px;
+      height: 80px;
+      width: 100%;
+      overflow: hidden; }
+      .reason_of_book .reason_of_book_text_box_inner .reason_of_book_text_box_inner_one .reason_of_book_text_box_inner_one_text p {
+        text-align: center;
+        line-height: 1.4;
+        color: #fff; }
+
+.footer_above {
+  background: url("../images/footer.png");
+  height: 66vh;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .footer_above .footer_above_inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 100px;
+    padding-top: 65px; }
+    .footer_above .footer_above_inner .footer_above_inner_one {
+      height: 215px;
+      overflow: hidden; }
+      .footer_above .footer_above_inner .footer_above_inner_one .footer_above_inner_one_text_box_one {
+        position: relative; }
+        .footer_above .footer_above_inner .footer_above_inner_one .footer_above_inner_one_text_box_one h4 {
+          color: #1097d6;
+          font-weight: 700;
+          margin-bottom: 25px; }
+          .footer_above .footer_above_inner .footer_above_inner_one .footer_above_inner_one_text_box_one h4::after {
+            content: "";
+            position: absolute;
+            height: 3px;
+            background-color: #fa9f1b;
+            top: 26px;
+            left: 0%;
+            width: 55px; }
+        .footer_above .footer_above_inner .footer_above_inner_one .footer_above_inner_one_text_box_one .footer_above_text {
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          color: #888888;
+          margin-bottom: 22px; }
+          .footer_above .footer_above_inner .footer_above_inner_one .footer_above_inner_one_text_box_one .footer_above_text span {
+            font-size: 14px;
+            color: #888888;
+            margin-right: 20px; }
+            .footer_above .footer_above_inner .footer_above_inner_one .footer_above_inner_one_text_box_one .footer_above_text span a {
+              color: #888888; }
+      .footer_above .footer_above_inner .footer_above_inner_one .footer_above_inner_one_text_box_two {
+        position: relative; }
+        .footer_above .footer_above_inner .footer_above_inner_one .footer_above_inner_one_text_box_two h4 {
+          color: #1097d6;
+          font-weight: 700;
+          margin-bottom: 25px; }
+          .footer_above .footer_above_inner .footer_above_inner_one .footer_above_inner_one_text_box_two h4::after {
+            content: "";
+            position: absolute;
+            height: 3px;
+            background-color: #fa9f1b;
+            top: 26px;
+            left: 0%;
+            width: 20px; }
+        .footer_above .footer_above_inner .footer_above_inner_one .footer_above_inner_one_text_box_two h5 {
+          color: #888888;
+          font-weight: normal;
+          margin-bottom: 22px; }
+      .footer_above .footer_above_inner .footer_above_inner_one .footer_above_inner_one_text_box_three {
+        position: relative; }
+        .footer_above .footer_above_inner .footer_above_inner_one .footer_above_inner_one_text_box_three h4 {
+          color: #1097d6;
+          font-weight: 700;
+          margin-bottom: 25px; }
+          .footer_above .footer_above_inner .footer_above_inner_one .footer_above_inner_one_text_box_three h4::after {
+            content: "";
+            position: absolute;
+            height: 3px;
+            background-color: #fa9f1b;
+            top: 26px;
+            left: 0%;
+            width: 84px; }
+        .footer_above .footer_above_inner .footer_above_inner_one .footer_above_inner_one_text_box_three h5 {
+          color: #888888;
+          font-weight: normal;
+          margin-bottom: 22px; }
+
+.copy_right {
+  padding: 18px 0;
+  background: #fa9f1b; }
+  .copy_right h5 {
+    text-align: center;
+    color: #fff; }
+    .copy_right h5 a {
+      color: #fff; }
+
+.signin_form {
+  background: url(../images/banner.png);
+  height: 87.8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .signin_form .signin_form_main_block {
+    width: 33%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px; }
+    .signin_form .signin_form_main_block .signin_form_main_block_inner .siginin_logo {
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding-bottom: 35px; }
+    .signin_form .signin_form_main_block .signin_form_main_block_inner .name_holder {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .signin_form .signin_form_main_block .signin_form_main_block_inner .name_holder .second_name {
+        margin-left: 20px; }
+    .signin_form .signin_form_main_block .signin_form_main_block_inner .password_holder input[type="password"], .signin_form .signin_form_main_block .signin_form_main_block_inner .password_holder input[type="email"], .signin_form .signin_form_main_block .signin_form_main_block_inner .password_holder input[type="tel"], .signin_form .signin_form_main_block .signin_form_main_block_inner .password_holder input[type="text"], .signin_form .signin_form_main_block .signin_form_main_block_inner .email_holder input[type="password"], .signin_form .signin_form_main_block .signin_form_main_block_inner .email_holder input[type="email"], .signin_form .signin_form_main_block .signin_form_main_block_inner .email_holder input[type="tel"], .signin_form .signin_form_main_block .signin_form_main_block_inner .email_holder input[type="text"], .signin_form .signin_form_main_block .signin_form_main_block_inner .tel_holder input[type="password"], .signin_form .signin_form_main_block .signin_form_main_block_inner .tel_holder input[type="email"], .signin_form .signin_form_main_block .signin_form_main_block_inner .tel_holder input[type="tel"], .signin_form .signin_form_main_block .signin_form_main_block_inner .tel_holder input[type="text"], .signin_form .signin_form_main_block .signin_form_main_block_inner .name_holder input[type="password"], .signin_form .signin_form_main_block .signin_form_main_block_inner .name_holder input[type="email"], .signin_form .signin_form_main_block .signin_form_main_block_inner .name_holder input[type="tel"], .signin_form .signin_form_main_block .signin_form_main_block_inner .name_holder input[type="text"] {
+      width: 100%;
+      outline: none;
+      font-size: 14px;
+      padding: .8em 1.2em;
+      display: inline-block;
+      background: transparent;
+      border: 1px solid #d5d5d5;
+      border-radius: 30px; }
+    .signin_form .signin_form_main_block .signin_form_main_block_inner .password_holder .custom_button_eye, .signin_form .signin_form_main_block .signin_form_main_block_inner .email_holder .custom_button_eye, .signin_form .signin_form_main_block .signin_form_main_block_inner .tel_holder .custom_button_eye, .signin_form .signin_form_main_block .signin_form_main_block_inner .name_holder .custom_button_eye {
+      position: absolute;
+      top: 15px;
+      right: 17px;
+      /* background: inherit; */
+      background: transparent;
+      border: none;
+      outline: none; }
+    .signin_form .signin_form_main_block .signin_form_main_block_inner .remember_password {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .signin_form .signin_form_main_block .signin_form_main_block_inner .remember_password .password {
+        color: #fa9f1b;
+        font-size: 14px; }
+    .signin_form .signin_form_main_block .signin_form_main_block_inner .signin_buttom {
+      margin-top: 20px; }
+      .signin_form .signin_form_main_block .signin_form_main_block_inner .signin_buttom .signin_custom_button {
+        width: 100%;
+        outline: none;
+        font-size: 14px;
+        padding: .8em .6em;
+        display: inline-block;
+        border-radius: 30px;
+        background: #fa9f1b;
+        border: none;
+        color: #fff;
+        -webkit-box-shadow: 0px 3px 5px #adaaaa;
+        box-shadow: 0px 3px 5px #adaaaa;
+        cursor: pointer; }
+    .signin_form .signin_form_main_block .signin_form_main_block_inner p {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px; }
+      .signin_form .signin_form_main_block .signin_form_main_block_inner p span {
+        color: #fa9f1b;
+        margin-left: 3px; }
+    .signin_form .signin_form_main_block .signin_form_main_block_inner .signup_button {
+      margin-top: 55px; }
+
+.checkbox_container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #2d2d2d; }
+
+.checkbox_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #d5d5d5; }
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.checkbox_container input:checked ~ .checkmark:after {
+  display: block; }
+
+.checkbox_container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid blue;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg) translateX(-50%);
+  -ms-transform: rotate(45deg) translateX(-50%);
+  transform: rotate(45deg) translateX(-50%); }
+
+.inward_menu_bottom {
+  background: url(../images/banner.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 90vh;
+  position: relative;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  .inward_menu_bottom .inward_menu_bottom_block {
+    border-radius: 15px;
+    background: #fff; }
+    .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner {
+      padding: 10px 25px 0px 25px; }
+      .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_one_block h4 {
+        color: #5eafdf; }
+      .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_one_block .flight_number {
+        padding: 12px 0;
+        border-bottom: 1px solid #d5d5d5;
+        position: relative; }
+        .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_one_block .flight_number .flight_number_tel input[type="tel"] {
+          width: 100%;
+          outline: none;
+          font-size: 14px;
+          display: inline-block;
+          background: transparent;
+          border: 1px solid #d5d5d5;
+          border-radius: 30px;
+          padding: .6em 4.3em;
+          font-size: 16px; }
+        .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_one_block .flight_number .flight_number_images {
+          position: absolute;
+          top: 11px;
+          left: 13px;
+          height: 43px;
+          width: 46px;
+          overflow: hidden;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_one_block .flight_number .flight_number_images::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            background-color: #d5d5d5;
+            top: 20%;
+            height: calc(100% + -14px);
+            left: 45px; }
+          .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_one_block .flight_number .flight_number_images img {
+            width: 60%;
+            -webkit-transform: rotate(-50deg);
+            -ms-transform: rotate(-50deg);
+            transform: rotate(-50deg); }
+      .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block {
+        padding: 50px 0;
+        height: 252px;
+        overflow: hidden; }
+        .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block .british_airways {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          position: relative; }
+          .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block .british_airways::after {
+            content: "";
+            height: 1px;
+            position: absolute;
+            background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #d5d5d5));
+            background-image: -webkit-linear-gradient(left, transparent 50%, #d5d5d5 50%);
+            background-image: -o-linear-gradient(left, transparent 50%, #d5d5d5 50%);
+            background-image: linear-gradient(to right, transparent 50%, #d5d5d5 50%);
+            background-size: 10px 2px;
+            background-repeat: repeat-x;
+            bottom: -22px;
+            width: calc(100% - 63px);
+            left: 46px; }
+          .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block .british_airways h6 {
+            font-family: "Roboto", sans-serif;
+            color: #2d2d2d;
+            font-weight: 400; }
+          .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block .british_airways h4 {
+            color: #888888;
+            font-weight: 400; }
+        .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block .british_airways_one {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+        .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block .dublin_main_block {
+          margin-top: 10px; }
+          .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block .dublin_main_block .dublin_main_block_one {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block .dublin_main_block .dublin_main_block_one h6 {
+              font-family: "Roboto", sans-serif;
+              color: #2d2d2d;
+              font-weight: 400; }
+          .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block .dublin_main_block .dublin_main_block_two {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block .dublin_main_block .dublin_main_block_two h4 {
+              color: #888888;
+              font-weight: 400; }
+      .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block_holder .british_airways {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block_holder .british_airways h4 {
+          color: #888888;
+          font-weight: 400; }
+        .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block_holder .british_airways h4:nth-child(1) {
+          color: #2d2d2d; }
+      .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block_holder .british_airways_one {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative; }
+        .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block_holder .british_airways_one::after {
+          content: "";
+          height: 1px;
+          position: absolute;
+          background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #d5d5d5));
+          background-image: -webkit-linear-gradient(left, transparent 50%, #d5d5d5 50%);
+          background-image: -o-linear-gradient(left, transparent 50%, #d5d5d5 50%);
+          background-image: linear-gradient(to right, transparent 50%, #d5d5d5 50%);
+          background-size: 10px 2px;
+          background-repeat: repeat-x;
+          bottom: 13px;
+          width: calc(100% - 45px);
+          left: 26px; }
+      .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block_holder .dublin_main_block .dublin_main_block_one {
+        padding: 8px 0 15px 0;
+        border-bottom: 1px solid #d5d5d5;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block_holder .dublin_main_block .dublin_main_block_one h4 {
+          color: #888888;
+          font-weight: 400; }
+          .inward_menu_bottom .inward_menu_bottom_block .inward_menu_bottom_inner .inward_two_block_holder .dublin_main_block .dublin_main_block_one h4 span {
+            font-family: "Roboto", sans-serif;
+            color: #2d2d2d;
+            font-weight: 400; }
+    .inward_menu_bottom .inward_menu_bottom_block .inward_third_block {
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      background: #2d2d2d;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 10px 0; }
+      .inward_menu_bottom .inward_menu_bottom_block .inward_third_block a, .inward_menu_bottom .inward_menu_bottom_block .inward_third_block a:hover {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600; }
+        .inward_menu_bottom .inward_menu_bottom_block .inward_third_block a i, .inward_menu_bottom .inward_menu_bottom_block .inward_third_block a:hover i {
+          margin-left: 10px; }
+
+.label#fname-error {
+  color: #FF0000; }
+
+@media (max-width: 991px) and (min-width: 581px) {
+  .navbar-header {
+    height: 59px; } }
+
+@media (max-width: 991px) {
+  .navbar .my_menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: unset;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+  .navbar .my_menu li:nth-child(4):after {
+    display: none; }
+  .menu_bottom {
+    height: auto; }
+    .menu_bottom .menu_bottom_inner {
+      grid-gap: 24px; }
+  .reason_of_book .reason_of_book_text_box_inner {
+    grid-gap: 99px; }
+  .footer_above .footer_above_inner {
+    grid-gap: 80px; }
+  .navbar-header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative; }
+  .my_menu_holder {
+    position: relative; }
+  .my_menu_holder_inner:after {
+    content: "";
+    background: #e0e0e0;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 74px; }
+  .navbar-toggler {
+    outline: none !important; }
+  .airport_transport .airport_transport_main_text {
+    height: 156px; }
+  .signin_form {
+    height: auto;
+    padding: 100px 0; }
+    .signin_form .signin_form_main_block {
+      width: 45%; } }
+
+@media (max-width: 768px) {
+  .menu_bottom .menu_bottom_inner {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; }
+  .reason_of_book .reason_of_book_text_box_inner {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px; }
+  .footer_above {
+    height: auto; }
+    .footer_above .footer_above_inner {
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+      padding-bottom: 65px; }
+      .footer_above .footer_above_inner .footer_above_text_block {
+        display: block !important; }
+  .airport_transport .airport_transport_main_text {
+    height: 186px; }
+  .reason_of_book .reason_of_book_text_box .reason_of_book_text_box_main_text_box {
+    height: 150px; }
+  .signin_form .signin_form_main_block {
+    width: 55%; } }
+
+@media (max-width: 634px) {
+  .signin_form .signin_form_main_block .signin_form_main_block_inner .remember_password {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
+@media (max-width: 580px) {
+  .navbar-header {
+    height: 74px; }
+  .navbar {
+    padding: 0 15px; }
+  .signin_form .signin_form_main_block {
+    width: 65%; } }
+
+@media (max-width: 480px) {
+  .menu_bottom .menu_bottom_inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; }
+  .reason_of_book .reason_of_book_text_box_inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 0px; }
+  .footer_above .footer_above_inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; }
+  .airport_transport .airport_transport_main_block h3 {
+    font-size: 28px; }
+  .airport_transport .airport_transport_main_text {
+    height: auto; }
+  .reason_of_book .reason_of_book_text_box .reason_of_book_text_box_main_text h3 {
+    font-size: 28px; }
+  .signin_form .signin_form_main_block {
+    width: 70%; } }
+
+@media (max-width: 444px) {
+  .reason_of_book .reason_of_book_text_box .reason_of_book_text_box_main_text_box {
+    height: auto; } }
+
+@media (max-width: 375px) {
+  .airport_transport .airport_transport_main_block h3 {
+    font-size: 22px; }
+  .airport_transport .airport_transport_main_block::after {
+    top: 40px; }
+  .reason_of_book .reason_of_book_text_box .reason_of_book_text_box_main_text h3 {
+    font-size: 22px; }
+  .reason_of_book .reason_of_book_text_box .reason_of_book_text_box_main_text::after {
+    top: 40px; }
+  .signin_form .signin_form_main_block {
+    width: 93%; } }

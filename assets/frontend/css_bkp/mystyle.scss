@@ -1,0 +1,1067 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus,
+a:target {
+  text-decoration: none;
+
+  outline: none !important;
+}
+
+h1 {
+  font-size: 33px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 17px;
+}
+
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 26px;
+}
+p {
+  font-size: 16px;
+}
+a {
+  font-size: 14px;
+}
+
+li {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+$primary-color: #fff;
+$menu_color: #1097d6;
+$secondary_color: #fa9f1b;
+$menu_bottom_box_color: #1698d4;
+$footer_color:#888888;
+$form_color:#d5d5d5;
+$inward_color:#5eafdf;
+$inwaed_text_color:#2d2d2d;
+
+
+@mixin menu_bottom_h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+@mixin menu_bottom_h2 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+@mixin after_before{
+  content: "";
+  position: absolute;
+  width: 72px;
+  height: 4px;
+  background-color: $secondary_color;
+  top: 52px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@mixin reason_image_box{
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+@mixin reason_image_text{
+  height:80px;
+  width: 100%;
+  overflow: hidden;
+}
+@mixin footer_h4{
+color: $menu_color;
+font-weight: 700;
+}
+@mixin footer_after_before{
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color:$secondary_color;
+  top: 26px;
+  left: 0%;
+}
+@mixin differnt_input_type{
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  padding: .8em 1.2em;
+  display: inline-block;
+  background: transparent;
+  border:1px solid $form_color;
+ border-radius: 30px;
+}
+@mixin form_input_type{
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  display: inline-block;
+  background: transparent;
+  border:1px solid $form_color;
+ border-radius: 30px;
+}
+@mixin custom_button{ 
+  width:100%;
+  outline: none;
+  font-size: 14px;
+  padding: .8em .6em;
+  display: inline-block;
+  border-radius: 30px;
+  background:$secondary_color; 
+  border:none;
+  color:$primary-color;
+  box-shadow: 0px 3px 5px #adaaaa;
+  cursor: pointer;
+}
+@mixin inward_after_before{ 
+  content: "";
+  
+  height: 1px;
+  position: absolute;
+ 
+ 
+  background-image: linear-gradient(to right, transparent 50%, $form_color 50%);
+  background-size: 10px 2px;
+  background-repeat: repeat-x;
+}
+// menu
+.navbar .my_menu li:nth-child(4):after {
+  content: "";
+    position: absolute;
+    background: #1097d6;
+    width: 2px;
+    height: 2px;
+    background-color: #cfcfcf;
+    right: 161px;
+    top: 35%;
+    height: calc(100% + -66px);
+}
+ .navbar .navbar-nav > .active:before, .navbar  .navbar-nav > li > a:before{
+   content: '';
+    position: absolute;
+    bottom:9px;
+    background: $menu_color;
+    height: 3px;
+    width: 0;
+     left:0;
+  transition:.5s all;
+  }
+  .navbar .navbar-nav > .active > a {
+    color: $menu_bottom_box_color !important;
+    &::before {
+      position: absolute;
+      bottom: 9px;
+      width: 100%;
+      content: "";
+      height: 3px;
+      background-color:$menu_bottom_box_color;
+    }
+  }
+ 
+ .navbar .navbar-nav .nav-item  a:hover:before,.navbar-default .navbar-nav .nav-item a.active:before{
+  width:100%;
+
+ }
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus,.navbar .navbar-nav li a span:hover {
+   color: $menu_color !important;
+    background:none;
+  }
+
+.my_menu_holder {
+  background: $primary-color;
+  box-shadow: 0px 0px 8px #888888;
+}
+
+.navbar .desktop_navbrand {
+  display: none;
+}
+// .navbar {
+//   padding: 0px;
+// }
+.navbar .navbar-toggle {
+  background: #6b7a97;
+}
+
+.navbar .my_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+.navbar .my_menu li {
+  margin-left: 18px;
+}
+.navbar .my_menu li a {
+  font-size: 16px;
+  padding: 0;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  font-family: "Roboto", sans-serif;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #595959 !important;
+}
+.navbar-light .navbar-nav .active > .nav-link {
+  color: $menu_color;
+}
+.navbar .navbar-nav > li > a:hover {
+  color: $menu_color;
+  transition: 0.5s all;
+}
+
+.navbar .my_menu li a.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+// menu
+.menu_bottom {
+  background: url(../images/banner.png);
+  padding: 120px 0 70px 0;
+  height: 90vh;
+  background-size: 100%;
+    background-repeat: no-repeat;
+  .menu_bottom_inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+    .menu_bottom_inner_one {
+      background: $secondary_color;
+      border-radius: 15px;
+      padding: 80px 0;
+      .menu_bottom_inner_one_picture {
+        display: flex;
+        img {
+          margin: 0 auto;
+        }
+      }
+      .menu_bottom_inner_one_text {
+        h1 {
+          @include menu_bottom_h1;
+          color: $primary-color;
+          margin-top: 45px;
+        }
+        h2 {
+          @include menu_bottom_h2;
+          color: $primary-color;
+          margin-top: 10px;
+        }
+      }
+    }
+    .menu_bottom_inner_two {
+      background: $menu_bottom_box_color;
+      border-radius: 15px;
+      padding: 80px 0;
+      .menu_bottom_inner_one_picture {
+        display: flex;
+        img {
+          margin: 0 auto;
+        }
+      }
+      .menu_bottom_inner_one_text {
+        h1 {
+          @include menu_bottom_h1;
+          color: $primary-color;
+          margin-top: 45px;
+        }
+        h2 {
+          @include menu_bottom_h2;
+          color: $primary-color;
+          margin-top: 10px;
+        }
+      }
+    }
+    .menu_bottom_inner_three {
+      background: $primary-color;
+      border-radius: 15px;
+      padding: 80px 0;
+      .menu_bottom_inner_one_picture {
+        display: flex;
+        img {
+          margin: 0 auto;
+        }
+      }
+      .menu_bottom_inner_one_text {
+        h1 {
+          @include menu_bottom_h1;
+          color: $menu_bottom_box_color;
+          margin-top: 45px;
+        }
+        h2 {
+          @include menu_bottom_h2;
+          color: $menu_bottom_box_color;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+.airport_transport {
+  padding: 60px 0;
+  .airport_transport_main_block{
+    height:55px;
+    overflow: hidden;
+    position: relative;
+    &::after {
+      @include after_before;
+    }
+  h3 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: #888888;
+    font-weight: 400;
+    
+    
+  }
+}
+  .airport_transport_main_text{
+    overflow:hidden;
+    height: 120px;
+  p {
+    text-align: center;
+    margin-top:15px;
+    line-height: 1.4;
+    color: #454545;
+  }
+}
+}
+.reason_of_book{
+  padding: 60px 0;
+  background:$menu_color;
+  .reason_of_book_text_box{
+    .reason_of_book_text_box_main_text{
+      height:55px;
+      overflow: hidden;
+      position: relative;
+      &::after {
+        @include after_before;
+      }
+      h3{
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        color:$primary-color;
+        font-weight: 400;
+        position: relative;
+        letter-spacing: 1px;
+       
+      }
+  }
+  .reason_of_book_text_box_main_text_box{
+    height:110px ;
+    overflow: hidden;
+    p {
+      text-align: center;
+      margin-top: 22px;
+      line-height: 1.4;
+      color:$primary-color;
+    }
+  }
+  }
+  .reason_of_book_text_box_inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    grid-gap: 141px;
+    margin-top:15px;
+    .reason_of_book_text_box_inner_one{
+      .reason_of_book_text_box_inner_one_pic{
+        @include reason_image_box;
+      }
+      .reason_of_book_text_box_inner_one_text{
+        margin-top:20px;
+        @include reason_image_text;
+        p{
+          text-align: center;
+          line-height: 1.4;
+          color:$primary-color;
+        }
+      }
+    }
+  }
+}
+.footer_above{
+  background: url("../images/footer.png");
+  height:66vh;
+  background-size: 100%;
+    background-repeat: no-repeat;
+  .footer_above_inner{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:100px;
+    padding-top:65px;
+    .footer_above_inner_one{
+      height: 215px;
+      overflow: hidden;
+      .footer_above_inner_one_text_box_one{
+        position: relative;
+        h4{
+          @include footer_h4;
+          margin-bottom: 25px;
+          &::after{
+            @include footer_after_before;
+            width:55px;
+          }
+        }
+        .footer_above_text{
+          display: inline-flex;
+          color: $footer_color;
+          margin-bottom: 22px;
+          span{
+            font-size:14px;
+            color: $footer_color;
+            margin-right: 20px;
+            a{
+              color: $footer_color; 
+            }
+          }
+        }
+      }
+      .footer_above_inner_one_text_box_two{
+        position: relative;
+        h4{
+          @include footer_h4;
+          margin-bottom: 25px;
+          &::after{
+            @include footer_after_before;
+            width:20px;
+          }
+        }
+        h5{
+          color: $footer_color;
+          font-weight: normal;
+          margin-bottom: 22px; 
+        }
+      }
+      .footer_above_inner_one_text_box_three{
+        position: relative;
+        h4{
+          @include footer_h4;
+          margin-bottom: 25px;
+          &::after{
+            @include footer_after_before;
+            width:84px;
+          }
+        }
+        h5{
+          color: $footer_color;
+          font-weight: normal;
+          margin-bottom: 22px; 
+        }
+      }
+    }
+  }
+}
+.copy_right{
+  padding: 18px 0;
+  background:$secondary_color;
+  h5{
+    text-align: center;
+    color:$primary-color;
+    a{
+      color:$primary-color;
+    }
+  }
+}
+.signin_form{
+  background:url(../images/banner.png);
+  height:87.8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100%;
+    background-repeat: no-repeat;
+  .signin_form_main_block{
+    width:33%;
+    margin:0 auto;
+    background:$primary-color;
+    padding: 30px;
+    border-radius: 15px;
+    .signin_form_main_block_inner{
+      .siginin_logo{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 35px;
+      }
+      .name_holder{
+        display:flex;
+        justify-content: space-between;
+        .second_name{
+          margin-left:20px;
+        }
+      }
+      .password_holder,.email_holder, .tel_holder, .name_holder{
+      input[type="password"], input[type="email"],input[type="tel"], input[type="text"]{
+        @include differnt_input_type;
+       
+      }
+      .custom_button_eye{
+        position: absolute;
+        top: 15px;
+        right: 17px;
+        /* background: inherit; */
+        background: transparent;
+        border: none;
+        outline: none;
+      }
+    }
+      .remember_password{
+        display: flex;
+        justify-content: space-between;
+        .password{
+          color:$secondary_color;
+          font-size:14px;
+          
+        }
+      }
+      .signin_buttom{
+        margin-top:20px;
+        .signin_custom_button{
+        @include custom_button;
+        }
+      }
+      p{
+        margin-top:30px;
+        text-align:center;
+        font-size:14px;
+        span{
+          color:$secondary_color;
+          margin-left:3px;
+        }
+      }
+      .signup_button{
+        margin-top:55px;
+      }
+    }
+  }
+}
+
+.checkbox_container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size:14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #2d2d2d;
+}
+.checkbox_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+ border:1px solid $form_color;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox_container input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox_container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid blue;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg) translateX(-50%);
+  -ms-transform: rotate(45deg) translateX(-50%);
+  transform: rotate(45deg) translateX(-50%);
+}
+.inward_menu_bottom{
+  background: url(../images/banner.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  position: relative;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  &::after{
+    // content: "";
+    // position: absolute;
+    // height: 20px;
+    // background: red !important;
+    // top: 196px;
+    // left: 78px;
+    // width: 20px;
+    // border-radius: 50%;
+  }
+  .inward_menu_bottom_block{
+    border-radius: 15px;
+    background:$primary-color;
+    .inward_menu_bottom_inner{
+      padding: 10px 25px 0px 25px;
+      .inward_one_block{
+          h4{
+            color:$inward_color;
+          }
+          .flight_number{
+            padding:12px 0;
+            border-bottom: 1px solid $form_color;
+            position: relative;
+            .flight_number_tel{
+            input[type="tel"]{
+              @include form_input_type;
+              padding: .6em 4.3em;
+              font-size:16px;
+              
+              
+            }
+          }
+            .flight_number_images{
+              position: absolute;
+              top: 11px;
+              left: 13px;
+              height: 43px;
+              width: 46px;
+              overflow: hidden;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              &::after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                background-color:$form_color;
+                top: 20%;
+                height: calc(100% + -14px);
+                left: 45px;
+              }
+            img{
+              width:60%;
+              transform: rotate(-50deg);
+            }
+          }
+        }
+
+      }
+      .inward_two_block{
+        padding: 50px 0;
+        height: 252px;
+        overflow: hidden;
+        .british_airways{
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+          &::after {
+            @include inward_after_before;
+            bottom: -22px;
+            width: calc(100% - 63px);
+            left: 46px;
+          }
+          h6{
+            font-family: "Roboto", sans-serif;
+            color: $inwaed_text_color;
+            font-weight: 400;
+          }
+          h4{
+            color:$footer_color;
+            font-weight: 400;
+          }
+        }
+        .british_airways_one{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .dublin_main_block{
+          margin-top:10px;
+          .dublin_main_block_one{
+            display:flex;
+            justify-content: space-between;
+            h6{
+              font-family: "Roboto", sans-serif;
+              color: $inwaed_text_color;
+              font-weight: 400;
+            }
+          }
+          .dublin_main_block_two{
+            display:flex;
+            justify-content: space-between;
+            h4{
+              color:$footer_color;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .inward_two_block_holder{
+        .british_airways{
+          display: flex;
+          justify-content: space-between;
+          
+          h4{
+            color:$footer_color;
+            font-weight: 400;
+          }
+          h4:nth-child(1){
+            color:$inwaed_text_color;
+          } 
+        }
+        .british_airways_one{
+          display:flex;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+          &::after {
+            @include inward_after_before;
+            bottom:13px;
+            width: calc(100% - 45px);
+            left: 26px;
+          }
+
+        }
+        .dublin_main_block{
+          
+          .dublin_main_block_one{
+            padding: 8px 0 15px 0;
+             border-bottom: 1px solid $form_color;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+          h4{
+            color:$footer_color;
+            font-weight: 400;
+            span{
+              font-family: "Roboto", sans-serif;
+              color: $inwaed_text_color;
+              font-weight: 400;
+            }
+          }
+        }
+        .dublin_main_block_two{
+
+        }
+        }
+      }
+  }
+  .inward_third_block{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background:$inwaed_text_color;
+    display:flex;
+    justify-content: center;
+    padding: 10px 0;
+    a, a:hover{
+      color:$primary-color;
+      font-size: 18px;
+      font-weight: 600;
+      i{
+        margin-left:10px;
+      }
+    }
+  }
+}
+}
+.label#fname-error{
+  color:#FF0000;
+}
+@media (max-width:991px) and (min-width:581px) {
+  .navbar-header{
+    height:59px;
+  }
+}
+@media (max-width: 991px) {
+  .navbar .my_menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: unset;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  .navbar{
+    .my_menu li:nth-child(4):after{
+      display: none;
+    }
+
+  }
+  .menu_bottom{
+    height: auto;
+    .menu_bottom_inner{
+      grid-gap: 24px;
+    }
+  }
+  .reason_of_book{
+    .reason_of_book_text_box_inner{
+      grid-gap: 99px;
+    } 
+  } 
+  .footer_above{
+    .footer_above_inner{
+      grid-gap: 80px;
+    }
+  }
+  .navbar-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    // height: 74px;
+  }
+  .my_menu_holder{
+    position: relative;
+  }
+  .my_menu_holder_inner:after{
+    content: "";
+    background: #e0e0e0;
+    width:100%;
+    height: 2px;
+    position: absolute;
+    top:74px;
+  
+  } 
+  .navbar-toggler{
+    outline: none !important;
+  }
+  .airport_transport {
+    .airport_transport_main_text{
+      height: 156px;
+
+    }
+  }
+  .signin_form{
+    height: auto;
+    padding: 100px 0;
+    .signin_form_main_block{
+      width: 45%;
+    }
+  } 
+}
+@media (max-width:768px) {
+  .menu_bottom{
+  .menu_bottom_inner{
+    grid-template-columns: 1fr 1fr ;
+  }
+  }
+  .reason_of_book{
+    .reason_of_book_text_box_inner{
+      grid-template-columns: 1fr 1fr ;
+      grid-gap: 40px;
+    } 
+  } 
+  .footer_above{
+    height: auto;
+    .footer_above_inner{
+      grid-template-columns: 1fr 1fr ;
+      grid-gap:15px;
+      padding-bottom:65px;
+      .footer_above_text_block{
+        display:block !important;
+      }
+    }
+  } 
+  .airport_transport {
+    .airport_transport_main_text{
+      height: 186px;
+
+    }
+  }
+  .reason_of_book{
+    .reason_of_book_text_box{
+      .reason_of_book_text_box_main_text_box{
+        height:150px;
+      }
+    }
+
+  }
+  .signin_form{
+    .signin_form_main_block{
+      width: 55%;
+    }
+  }    
+}
+@media (max-width: 634px) {
+  .signin_form{
+    .signin_form_main_block{
+      .signin_form_main_block_inner{
+        .remember_password{
+          flex-direction: column;
+        }
+      }
+
+    }
+  }   
+}
+@media (max-width: 580px) {
+  .navbar-header{
+    height: 74px;
+  }
+  .navbar{
+    padding: 0 15px;
+  }
+  .signin_form{
+    .signin_form_main_block{
+      width:65%;
+    }
+  } 
+}
+@media (max-width: 480px) {
+  .menu_bottom{
+    .menu_bottom_inner{
+      grid-template-columns: 1fr;
+    }
+    }
+    .reason_of_book{
+      .reason_of_book_text_box_inner{
+        grid-template-columns: 1fr;
+        grid-gap:0px;
+      } 
+    }
+    .footer_above{
+      .footer_above_inner{
+        grid-template-columns: 1fr;
+      }
+    }
+    .airport_transport{
+      .airport_transport_main_block{
+        h3{
+          font-size:28px;
+        }
+      }
+    } 
+    .airport_transport {
+      .airport_transport_main_text{
+        height:auto;
+      }
+    } 
+    .reason_of_book{
+      .reason_of_book_text_box {
+        .reason_of_book_text_box_main_text{
+          h3{
+            font-size:28px;
+          }
+        }
+      }
+    } 
+    .signin_form{
+      .signin_form_main_block{
+        width:70%;
+      }
+    } 
+  }
+  @media (max-width:444px) {
+    .reason_of_book{
+      .reason_of_book_text_box{
+        .reason_of_book_text_box_main_text_box{
+          height:auto;
+        }
+      }
+  
+    }
+
+  }
+  @media (max-width:375px) {
+    .airport_transport{
+      .airport_transport_main_block{
+        h3{
+          font-size:22px;
+        }
+        &::after{
+          top:40px;
+        }
+      }
+    }
+    .reason_of_book{
+      .reason_of_book_text_box {
+        .reason_of_book_text_box_main_text{
+          h3{
+            font-size:22px;
+          }
+          &::after{
+            top:40px;
+          }
+        }
+      }
+    }
+    .signin_form{
+      .signin_form_main_block{
+        width:93%;
+      }
+    } 
+  }
+
+
+
+ 
+

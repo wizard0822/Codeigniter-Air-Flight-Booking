@@ -1,0 +1,4881 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus,
+a:target {
+    text-decoration: none;
+
+    outline: none !important;
+}
+
+
+.black_text {
+    color: #000;
+}
+
+.font_18 {
+    font-size: 18px !important;
+}
+
+.nav-tabs {
+    border-top-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+    overflow: hidden;
+
+    .nav-item {
+        border-right: 0 !important;
+
+        .nav-link {
+            border-radius: 0 !important;
+            border: 0 !important;
+            padding: 1rem;
+            font-weight: 500;
+            font-size: 17px;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 15%;
+                height: 70%;
+                right: 0;
+                width: 2px;
+                background-color: #fff;
+            }
+        }
+
+        &:last-child {
+            .nav-link {
+                &::after {
+                    content: unset;
+                }
+            }
+        }
+
+        .active {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 10%;
+                height: 80%;
+                left: -2px;
+                width: 2px;
+                background-color: #404040;
+            }
+
+            &::after {
+                content: unset;
+            }
+        }
+    }
+}
+
+h1 {
+    font-size: 33px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 17px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 26px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    font-size: 14px;
+}
+
+li {
+    font-size: 16px;
+}
+
+small {
+    font-size: 90%;
+}
+
+body {
+    font-family: "Roboto", sans-serif !important;
+}
+
+$primary-color: #fff;
+$menu_color: #1097d6;
+$secondary_color: #fa9f1b;
+$menu_bottom_box_color: #1698d4;
+$footer_color: #888888;
+$form_color: #d5d5d5;
+$inward_color: #5eafdf;
+$inwaed_text_color: #2d2d2d;
+$inward-subtext_color: #a4a4a4;
+$button-one-color: #666666;
+$btn_yellow: #fb9c12;
+
+.blue_header_form {
+    background: $menu_color;
+    padding: 10px 0;
+    height: 48px;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    h5 {
+        font-size: 22px;
+    }
+}
+
+.secondary_color {
+    color: $secondary_color;
+}
+
+// label#airline_name_input-error {
+//     bottom: -10px !important;
+//     background-color: #fff;
+//     width: auto;
+// }
+
+.edit_profile_phone {
+    .flag-container {
+        left: 55px !important;
+    }
+}
+
+.font_80per {
+    font-size: 80%;
+}
+
+.font_20 {
+    font-size: 20px;
+}
+
+.bg_transparent {
+    background-color: transparent !important;
+}
+
+.no_box_shadow {
+    box-shadow: unset !important;
+}
+
+.show_more_boxshadow {
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2) !important;
+
+    &:active,
+    &:hover,
+    &:focus {
+        box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.2) !important;
+    }
+}
+
+.footer_color {
+    color: $footer_color;
+}
+
+.tab_holder_profile {
+    min-height: 80vh;
+    padding: 120px 0 70px 0;
+}
+
+.tab {
+    border-radius: unset;
+}
+
+.profile_btn {
+    color: #fff;
+    width: 130px;
+    height: 38px;
+    border-radius: 4px;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile_password {
+    div.old_password_container {
+        grid-column: 1/3;
+        width: calc(50% - 10px);
+    }
+}
+
+.button_yellow {
+    background-color: $btn_yellow;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.btn_cancel {
+    background-color: $footer_color;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.br-6 {
+    border-radius: 6px;
+}
+
+.tabs_container {
+    .tab_content {
+        border: 2px solid $form_color;
+        border-top: 0;
+    }
+}
+
+.active_tab {
+    background-color: $inward_color;
+    color: #fff;
+    // border-top-left-radius: 6px;}
+}
+
+.non_active_tab {
+    background-color: $inwaed_text_color;
+    color: #fff;
+}
+
+#tab_content2 {
+    display: none;
+}
+
+.trip_details_header {
+    margin-top: 3px;
+    padding: calc(2em - 4px) 0;
+}
+
+.profile_tab_inputs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.my_booking_circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    position: absolute;
+    left: -26px;
+}
+
+// .listing_pg_circle {
+
+// }
+.bg_circle_orange {
+    background-color: $secondary_color;
+}
+
+.bg_circle_green {
+    background-color: #42e323;
+}
+
+.bg_circle_yellow {
+    background-color: $btn_yellow;
+}
+
+.bg_circle_grey {
+    background-color: #aaaaaa;
+}
+
+.bg_circle_red {
+    background-color: #c00000;
+}
+
+@mixin menu_bottom_h1 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+@mixin menu_bottom_h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+@mixin after_before {
+    content: "";
+    position: absolute;
+    width: 72px;
+    height: 4px;
+    background-color: $secondary_color;
+    top: 52px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+@mixin reason_image_box {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@mixin reason_image_text {
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+
+@mixin footer_h4 {
+    color: $menu_color;
+    font-weight: 700;
+}
+
+@mixin footer_after_before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: $secondary_color;
+    top: 26px;
+    left: 0%;
+    border-radius: 5px;
+}
+
+@mixin differnt_input_type {
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    padding: 0.8em 1.2em;
+    display: inline-block;
+    background: transparent;
+    border: 1px solid $form_color;
+    border-radius: 30px;
+}
+
+@mixin form_input_type {
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    display: inline-block;
+    background: transparent;
+    border: 1px solid $form_color;
+    border-radius: 18px;
+}
+
+@mixin custom_button {
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    padding: 0.8em 0.6em;
+    display: inline-block;
+    border-radius: 30px;
+    background: $secondary_color;
+    border: none;
+    color: $primary-color;
+    box-shadow: 0px 3px 5px #adaaaa;
+    cursor: pointer;
+}
+
+@mixin inward_after_before {
+    content: "";
+
+    height: 1px;
+    position: absolute;
+
+    background-image: linear-gradient(to right, transparent 50%, $form_color 50%);
+    background-size: 10px 2px;
+    background-repeat: repeat-x;
+}
+
+@mixin inward_fourth_fifth_block {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::after {
+        @include inward_after_before;
+        bottom: 27px;
+        width: calc(100% - 235px);
+        left: 117px;
+    }
+
+    .inward_fourth_block_one {
+        align-items: center;
+
+        p {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: end;
+
+            span {
+                font-size: 16px;
+                color: $inwaed_text_color;
+                z-index: 9;
+            }
+        }
+
+        span {
+            margin-left: 12px;
+            z-index: 9;
+        }
+
+        .downing_block {
+            margin-right: 12px;
+        }
+    }
+
+    .inward_fourth_block_one_inner_holder {
+        display: flex;
+        // align-items: center;
+        margin-top: -6px;
+
+        p {
+            position: relative;
+            font-size: 14px;
+            text-align: center;
+            padding: 0 10px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background-color: #151514;
+                // top: 27px;
+                bottom: -19px;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                z-index: 100;
+            }
+        }
+    }
+}
+
+.input_with_icon_holder {
+    .icon_part {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 16px;
+        width: 26px;
+        z-index: 9999;
+
+        i:before {
+            font-size: 24px;
+            color: $menu_color;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #d5d5d5;
+            left: 33px;
+        }
+    }
+
+    .custom_button_eye {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        z-index: 999;
+        color: $footer_color;
+    }
+
+    input {
+        @include differnt_input_type;
+        border-radius: 18px !important;
+        padding-left: 60px;
+        outline: none !important;
+        box-shadow: unset !important;
+
+        &:focus {
+            border-color: #d5d5d5 !important;
+        }
+    }
+}
+
+.ui-datepicker-trigger {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: unset;
+    cursor: pointer;
+}
+
+.navbar .navbar-nav>.active:before,
+.navbar .navbar-nav>li>a:before {
+    content: "";
+    position: absolute;
+    bottom: 9px;
+    background: $menu_color;
+    height: 3px;
+    width: 0;
+    left: 0;
+    transition: 0.5s all;
+}
+
+.navbar .navbar-nav>.active>a {
+    color: $menu_bottom_box_color !important;
+
+    &::before {
+        position: absolute;
+        bottom: 9px;
+        width: 100%;
+        content: "";
+        height: 3px;
+        background-color: $menu_bottom_box_color;
+    }
+}
+
+.navbar .navbar-nav .nav-item a:hover:before,
+.navbar-default .navbar-nav .nav-item a.active:before {
+    width: 100%;
+}
+
+.navbar .navbar-nav>.active>a,
+.navbar .navbar-nav>.active>a:hover,
+.navbar .navbar-nav>.active>a:focus,
+.navbar .navbar-nav li a span:hover {
+    color: $menu_color !important;
+    background: none;
+}
+
+.my_menu_holder {
+    background: $primary-color;
+    box-shadow: 0px 0px 8px #888888;
+}
+
+.navbar .desktop_navbrand {
+    display: none;
+}
+
+// .navbar {
+//   padding: 0px;
+// }
+.navbar .navbar-toggle {
+    background: #6b7a97;
+}
+
+.navbar .my_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.navbar .my_menu li {
+    margin-left: 18px;
+}
+
+.navbar .my_menu li a {
+    font-size: 16px;
+    padding: 0;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #595959 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #595959 !important;
+}
+
+
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: $menu_color;
+}
+
+.navbar .navbar-nav>li>a:hover {
+    color: $menu_color;
+    transition: 0.5s all;
+}
+
+.navbar .my_menu li a.navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+// menu
+.phone_rotate {
+    transform: rotate(-260deg);
+}
+
+.cancel_trip {
+    border-radius: 18px !important;
+    border: 2px solid #fa9b13;
+    color: #fa9b13;
+    box-shadow: unset !important;
+    outline: none !important;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: #fff !important;
+        background-color: #fa9b13 !important;
+    }
+
+    &.disabled_cancel_return {
+        pointer-events: none;
+        border-color: rgba($color: $secondary_color, $alpha: 0.5) !important;
+        color: rgba($color: $secondary_color, $alpha: 0.5) !important;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: rgba($color: $secondary_color, $alpha: 0.5) !important;
+            color: #fff !important;
+
+        }
+    }
+
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.pt-0 {
+    padding-top: 0 !important;
+}
+
+.px-25px {
+    padding: 0 25px;
+}
+
+.width_200 {
+    width: 200px;
+}
+
+.border_bottom_dashed {
+    border-bottom: 1px dashed #d5d5d5;
+}
+
+.details_page_tags {
+    margin-left: calc(-3em - 10px);
+}
+
+.color_unset {
+    color: unset !important;
+}
+
+.text-underline {
+    text-decoration: underline !important;
+}
+
+// Total amount: £120 + £20 (Driver Tip) =
+.primary_text_color {
+    color: $menu_color !important;
+}
+
+.font-weight-1000 {
+    font-weight: 1000 !important;
+}
+
+.r_pay_opt {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.font_40 {
+    font-size: 40px;
+}
+
+.background_grey {
+    background-color: #f2f2f2;
+}
+
+.background_light_green {
+    background-color: #def5ff;
+}
+
+.menu_bottom {
+    background: url(../images/banner.png);
+    padding: 120px 0 70px 0;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .menu_bottom_inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 60px;
+
+        .menu_bottom_inner_one {
+            background: $secondary_color;
+            border-radius: 15px;
+            padding: 80px 0;
+
+            .menu_bottom_inner_one_picture {
+                display: flex;
+
+                img {
+                    margin: 0 auto;
+                }
+            }
+
+            .menu_bottom_inner_one_text {
+                h1 {
+                    @include menu_bottom_h1;
+                    color: $primary-color;
+                    margin-top: 45px;
+                }
+
+                h2 {
+                    @include menu_bottom_h2;
+                    color: $primary-color;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .menu_bottom_inner_two {
+            background: $menu_bottom_box_color;
+            border-radius: 15px;
+            padding: 80px 0;
+
+            .menu_bottom_inner_one_picture {
+                display: flex;
+
+                img {
+                    margin: 0 auto;
+                }
+            }
+
+            .menu_bottom_inner_one_text {
+                h1 {
+                    @include menu_bottom_h1;
+                    color: $primary-color;
+                    margin-top: 45px;
+                }
+
+                h2 {
+                    @include menu_bottom_h2;
+                    color: $primary-color;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .menu_bottom_inner_three {
+            background: $primary-color;
+            border-radius: 15px;
+            padding: 80px 0;
+
+            .menu_bottom_inner_one_picture {
+                display: flex;
+
+                img {
+                    margin: 0 auto;
+                }
+            }
+
+            .menu_bottom_inner_one_text {
+                h1 {
+                    @include menu_bottom_h1;
+                    color: $menu_bottom_box_color;
+                    margin-top: 45px;
+                }
+
+                h2 {
+                    @include menu_bottom_h2;
+                    color: $menu_bottom_box_color;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+.airport_transport {
+    padding: 60px 0;
+
+    .airport_transport_main_block {
+        height: 55px;
+        overflow: hidden;
+        position: relative;
+
+        &::after {
+            @include after_before;
+        }
+
+        h3 {
+            font-family: "Roboto", sans-serif;
+            text-align: center;
+            color: #888888;
+            font-weight: 400;
+        }
+    }
+
+    .airport_transport_main_text {
+        overflow: hidden;
+        height: 120px;
+
+        p {
+            text-align: center;
+            margin-top: 15px;
+            line-height: 1.4;
+            color: #454545;
+        }
+    }
+}
+
+.reason_of_book {
+    padding: 60px 0;
+    background: $menu_color;
+
+    .reason_of_book_text_box {
+        .reason_of_book_text_box_main_text {
+            height: 55px;
+            overflow: hidden;
+            position: relative;
+
+            &::after {
+                @include after_before;
+            }
+
+            h3 {
+                font-family: "Roboto", sans-serif;
+                text-align: center;
+                color: $primary-color;
+                font-weight: 400;
+                position: relative;
+                letter-spacing: 1px;
+            }
+        }
+
+        .reason_of_book_text_box_main_text_box {
+            height: 110px;
+            overflow: hidden;
+
+            p {
+                text-align: center;
+                margin-top: 22px;
+                line-height: 1.4;
+                color: $primary-color;
+            }
+        }
+    }
+
+    .reason_of_book_text_box_inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80%;
+        margin: 0 auto;
+        grid-gap: 141px;
+        margin-top: 15px;
+
+        .reason_of_book_text_box_inner_one {
+            .reason_of_book_text_box_inner_one_pic {
+                @include reason_image_box;
+            }
+
+            .reason_of_book_text_box_inner_one_text {
+                margin-top: 20px;
+                @include reason_image_text;
+
+                p {
+                    text-align: center;
+                    line-height: 1.4;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.footer_above {
+    background: url("../images/footer.png");
+    height: 435px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .footer_above_inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 100px;
+        padding-top: 65px;
+
+        .footer_above_inner_one {
+            height: 215px;
+            overflow: hidden;
+
+            .footer_above_inner_one_text_box_one {
+                position: relative;
+
+                h4 {
+                    @include footer_h4;
+                    margin-bottom: 25px;
+
+                    &::after {
+                        @include footer_after_before;
+                        width: 55px;
+                    }
+                }
+
+                .footer_above_text {
+                    display: inline-flex;
+                    color: $footer_color;
+                    margin-bottom: 22px;
+
+                    span {
+                        font-size: 14px;
+                        color: $footer_color;
+                        margin-right: 20px;
+
+                        a {
+                            color: $footer_color;
+                        }
+                    }
+                }
+            }
+
+            .footer_above_inner_one_text_box_two {
+                position: relative;
+
+                h4 {
+                    @include footer_h4;
+                    margin-bottom: 25px;
+
+                    &::after {
+                        @include footer_after_before;
+                        width: 20px;
+                    }
+                }
+
+                h5 {
+                    color: $footer_color;
+                    font-weight: normal;
+                    margin-bottom: 22px;
+                }
+            }
+
+            .footer_above_inner_one_text_box_three {
+                position: relative;
+
+                h4 {
+                    @include footer_h4;
+                    margin-bottom: 25px;
+
+                    &::after {
+                        @include footer_after_before;
+                        width: 84px;
+                    }
+                }
+
+                h5 {
+                    color: $footer_color;
+                    font-weight: normal;
+                    margin-bottom: 22px;
+                }
+            }
+        }
+    }
+}
+
+.copy_right {
+    padding: 18px 0;
+    background: $secondary_color;
+
+    h5 {
+        text-align: center;
+        color: $primary-color;
+
+        a {
+            color: $primary-color;
+        }
+    }
+}
+
+.signin_form {
+    background: url(../images/banner.png);
+    min-height: 87.8vh;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .signin_form_main_block {
+        width: 33%;
+        margin: 0 auto;
+        background: $primary-color;
+        padding: 30px;
+        border-radius: 15px;
+
+        .signin_form_main_block_inner {
+            .siginin_logo {
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 35px;
+            }
+
+            .name_holder {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px;
+
+                // .second_name {
+                //     margin-left: 20px;
+                // }
+            }
+
+            .password_holder,
+            .email_holder,
+            .tel_holder,
+            .name_holder {
+
+                input[type="password"],
+                input[type="email"],
+                input[type="tel"],
+                input[type="text"] {
+                    @include differnt_input_type;
+                }
+
+                .custom_button_eye {
+                    position: absolute;
+                    top: 15px;
+                    right: 17px;
+                    /* background: inherit; */
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    color: #888888;
+                }
+            }
+
+            .remember_password {
+                display: flex;
+                justify-content: space-between;
+
+                .password {
+                    color: $secondary_color;
+                    font-size: 14px;
+                    margin-left: 20px;
+                }
+            }
+
+            .signin_buttom {
+                margin-top: 20px;
+
+                .signin_custom_button {
+                    @include custom_button;
+                }
+            }
+
+            p {
+                margin-top: 30px;
+                text-align: center;
+                font-size: 14px;
+
+                span {
+                    color: $secondary_color;
+                    margin-left: 3px;
+                }
+            }
+
+            .signup_button {
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+.checkbox_container {
+    display: block;
+    position: relative;
+    padding-left: 48px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #2d2d2d;
+}
+
+.checkbox_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid $form_color;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox_container input:checked~.checkmark:after {
+    display: block;
+}
+
+.checkbox_container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid blue;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg) translateX(-50%);
+    -ms-transform: rotate(45deg) translateX(-50%);
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.inward_menu_bottom {
+    background: url(../images/banner.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 90vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4em 0;
+
+    // &::after{
+    //   content: "";
+    //   position: absolute;
+    //   height: 20px;
+    //   background: red !important;
+    //   top: 196px;
+    //   left: 78px;
+    //   width: 20px;
+    //   border-radius: 50%;
+    // }
+    .inward_menu_bottom_block {
+        &#inbound_step1_form {
+            .inward_menu_bottom_inner .inward_up_blocks {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 30px;
+
+            }
+        }
+        &#outbound_step1_form {
+            .inward_menu_bottom_inner {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 30px;
+                
+            }
+        }
+        &#round_step1_form {
+            .inward_menu_bottom_inner {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 30px;
+                
+            }
+        }
+
+        border-radius: 15px;
+        background: $primary-color;
+        // background-image: url('/images/rounded-rectangle-5.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .inward_main_block_holder {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+
+            .inward_menu_bottom_inner {
+
+                padding: 10px 35px 50px 25px;
+
+                .inward_one_block {
+                    h4 {
+                        color: $inward_color;
+                    }
+
+                    .flight_number {
+                        padding: 12px 0;
+                        border-bottom: 1px solid $form_color;
+                        position: relative;
+
+                        .flight_number_tel {
+                            input[type="text"] {
+                                @include form_input_type;
+                                padding: 0.6em 4.3em;
+                                font-size: 16px;
+                            }
+                        }
+
+                        .flight_number_images {
+                            position: absolute;
+                            top: 11px;
+                            left: 13px;
+                            height: 43px;
+                            width: 46px;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                width: 1px;
+                                background-color: $form_color;
+                                top: 20%;
+                                height: calc(100% + -14px);
+                                left: 45px;
+                            }
+
+                            img {
+                                width: 60%;
+                                transform: rotate(-50deg);
+                            }
+                        }
+
+                        .flight_number_images {
+                            position: absolute;
+                            top: 11px;
+                            left: 13px;
+                            height: 43px;
+                            width: 46px;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                width: 1px;
+                                background-color: $form_color;
+                                top: 20%;
+                                height: calc(100% + -14px);
+                                left: 45px;
+                            }
+
+                            img {
+                                width: 60%;
+                                transform: rotate(-50deg);
+                            }
+                        }
+
+                        .flight_number_go {
+                            position: absolute;
+                            top: 12px;
+                            right: 1px;
+                            height: 45px;
+                            width: 65px;
+                            // background: #c0c0c0;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-top-right-radius: 18px;
+                            border-bottom-right-radius: 18px;
+                            overflow: hidden;
+
+                            a {
+                                height: 44px;
+                                width: 65px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #f69e1b;
+                                color: #fff !important;
+                                font-weight: bold;
+                                font-size: 17px;
+                            }
+
+                            // &::after {
+                            //   content: "";
+                            //   position: absolute;
+                            //   width: 1px;
+                            //   background-color: $form_color;
+                            //   top: 20%;
+                            //   height: calc(100% + -14px);
+                            //   right: 45px;
+                            // }
+
+                            img {
+                                width: 60%;
+                                transform: rotate(-50deg);
+                            }
+                        }
+                    }
+                    .promo_code {
+                        padding: 12px 0;
+                        border-bottom: 1px solid $form_color;
+                        position: relative;
+                        .promo_code_tel {
+                            input[type="text"] {
+                                @include form_input_type;
+                                padding: 0.6em 4.3em;
+                                font-size: 16px;
+                            }
+                        }
+                        .promo_code_images {
+                            position: absolute;
+                            top: 11px;
+                            left: 13px;
+                            height: 43px;
+                            width: 46px;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                width: 1px;
+                                background-color: $form_color;
+                                top: 20%;
+                                height: calc(100% + -14px);
+                                left: 45px;
+                            }
+
+                            img {
+                                width: 60%;
+                            }
+                        }
+                    }
+                }
+
+                // .inward_two_block{
+                //   padding: 50px 0;
+                //   height: 252px;
+                //   overflow: hidden;
+                //   background:#f5f5f5;
+                //   .british_airways{
+                //     display: flex;
+                //     justify-content: space-between;
+                //     position: relative;
+                //     &::after {
+                //       @include inward_after_before;
+                //       bottom: -22px;
+                //       width: calc(100% - 72px);
+                //       left: 46px;
+                //     }
+                //    .british_airways_text{
+                //     color:$inwaed_text_color;
+                //    }
+                //     h4{
+                //       color:$footer_color;
+                //       font-weight: 500;
+
+                //     }
+                //   }
+                //   .british_airways_one{
+                //     display: flex;
+                //     justify-content: space-between;
+                //     align-items: center;
+                //   }
+                //   .dublin_main_block_holder_holder{
+                //     margin-top:10px;
+                //     display:flex;
+                //     justify-content: space-between;
+                //     .dublin_main_block_ninety{
+                //      .dublin_main_block_right{
+                //        text-align: right;
+                //      }
+                //      .british_airways_text{
+                //       color:$inwaed_text_color;
+                //       font-weight:500;
+                //      }
+                //       h4{
+                //         color:$footer_color;
+                //         font-weight:400;
+                //       }
+                //     }
+
+                //   }
+                // }
+                .inward_two_block_holder {
+                    .british_airways {
+                        display: flex;
+                        justify-content: space-between;
+
+                        h4 {
+                            color: $footer_color;
+                            font-weight: 400;
+                        }
+
+                        h4:nth-child(1) {
+                            color: $inwaed_text_color;
+                        }
+                    }
+
+                    .british_airways_one {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: relative;
+
+                        &::after {
+                            @include inward_after_before;
+                            bottom: 13px;
+                            width: calc(100% - 45px);
+                            left: 26px;
+                        }
+                    }
+
+                    .dublin_main_block {
+                        .dublin_main_block_one {
+                            padding: 8px 0 8px 0;
+                            border-bottom: 1px solid $form_color;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .dublin_block_destination_text {
+                                color: $footer_color;
+                                font-weight: 400;
+                                font-size: 17px;
+                            }
+
+                            .dublin_block_destination {
+                                display: none;
+                            }
+
+                            span {
+                                color: $inwaed_text_color;
+                                font-weight: 400;
+                            }
+                        }
+
+                        textarea {
+                            outline: 0;
+                            width: 100%;
+                            padding: 0.375rem 0.75rem;
+                            border: 1px solid #d5d5d5;
+                        }
+                    }
+
+                    .dublin_main_block_two {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-column-gap: 30px;
+                        grid-row-gap: 12px;
+                        margin-bottom: 0px;
+
+                        .dublin_main_block_two_holder1 {
+                            h4 {
+                                color: $menu_color;
+                                margin: 15px 0 8px 0;
+                            }
+
+                            .airport_name {
+                                position: relative;
+
+                                .airport_name_holder {
+                                    input[type="text"] {
+                                        @include form_input_type;
+                                        padding: 0.6em 4.3em;
+                                        font-size: 16px;
+                                        color: #495057;
+                                    }
+                                }
+                            }
+
+                            .airport_name_images {
+                                position: absolute;
+                                top: 1px;
+                                left: 8px;
+                                height: 43px;
+                                width: 46px;
+                                overflow: hidden;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    width: 1px;
+                                    background-color: $form_color;
+                                    top: 20%;
+                                    height: calc(100% + -14px);
+                                    left: 45px;
+                                }
+                            }
+                        }
+
+                        // .dublin_main_block_two_holder1:nth-child(2){
+                        //   margin-left: 30px;
+                        // }
+                    }
+
+                    .dublin_main_block_inner {
+                        margin: 6px 0;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-gap: 60px;
+
+                        .bubble {
+                            display: none;
+                        }
+
+                        div {
+                            p {
+                                color: #9b9b9b;
+                                font-size: 12px;
+                                margin-top: 3px;
+                            }
+
+                            .dublin_main_block_inner_one {
+                                border-radius: 18px;
+                                padding: 0.4em 0.5em;
+                                background: $menu_color;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .dublin_main_block_inner_one {
+                                    h4 {
+                                        color: $primary-color;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                    }
+                                }
+
+                                .dublin_main_block_inner_two {
+                                    height: 30px;
+                                    width: 30px;
+                                    overflow: hidden;
+                                    background: #0e6892;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: #c1d8e3;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .inward_five_block {
+                    display: grid;
+                    grid-template-columns: 20fr 1fr;
+                    grid-column-gap: 93px;
+                    padding: 15px 0;
+                    border-bottom: 1px solid $form_color;
+
+                    .inward_five_block_inner_one {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-gap: 139px;
+
+                        .inward_five_block_one {
+                            .orange_error {
+                                position: absolute;
+                                bottom: -17px;
+                                left: 0;
+                                font-size: 12px;
+                            }
+
+                            #myInput3div {
+                                // right: 0px;
+                                left: unset;
+                            }
+
+                            div {
+                                position: relative;
+
+                            }
+
+                            p {
+                                color: $menu_color;
+                            }
+
+                            h4 {
+                                color: $inward-subtext_color;
+                                // font-size:20px;
+                                font-weight: normal;
+                            }
+
+                            div {
+                                .customar_name_holder {
+                                    outline: none;
+                                    border: 1px solid #ccc;
+                                    color: $inward-subtext_color;
+                                    font-size: 17px;
+                                    padding: 0 5px;
+                                    display: block;
+                                    width: 100%;
+                                    border-radius: 5px;
+
+                                    &:read-only {
+                                        border: unset;
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .inward_five_block_inner_one_holder {
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+
+                        .save-btn {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .inward_six_block {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    padding: 10px 0 50px 0;
+                    grid-gap: 20px;
+
+                    .inward_six_block_one_inner_one {
+                        p {
+                            color: $menu_color;
+                        }
+
+                        h4 {
+                            color: $inward-subtext_color;
+                            // font-size: 20px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+
+                .outward_six_block {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    padding: 10px 0;
+                    grid-gap: 20px;
+
+                    .inward_six_block_one_inner_one {
+                        p {
+                            color: $menu_color;
+                        }
+
+                        h4 {
+                            color: $inward-subtext_color;
+                            // font-size: 20px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+
+                .inward_fourth_block {
+                    @include inward_fourth_fifth_block;
+
+                    .inward_fourth_block_one_inner_holder {
+                        grid-column-gap: 63px;
+                        grid-template-columns: 1fr 1fr 1fr;
+                    }
+                }
+
+                .inward_seven_block {
+                    padding: 0 0 18px 0;
+
+                    .driver_tip {
+                        width: 20%;
+                        margin: 0 auto;
+                    }
+
+                    h1 {
+                        text-align: center;
+                        color: $menu_color;
+                        font-weight: 800;
+                        font-size: 40px;
+                    }
+                }
+
+                .inward_nine_main_block {
+                    display: flex;
+                    justify-content: center;
+
+                    .inward_nine_block {
+                        width: 45%;
+                        margin-left: 100px;
+
+                        .inward_nine_block_inner {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .inward_nine_one {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                .inward_nine_one_block_one {
+                                    h4 {
+                                        color: $inward-subtext_color;
+                                        font-size: 20px;
+                                        font-weight: normal;
+                                    }
+
+                                    h1 {
+                                        font-weight: 800;
+                                        font-size: 40px;
+                                        color: #1097d6;
+                                    }
+                                }
+
+                                .inward_nine_one_block_two {
+
+                                    // margin-left:10px;
+                                    span {
+                                        font-weight: 800;
+                                        margin-left: 7px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .twelve {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 100%;
+
+                    .twelve_one {
+                        margin-bottom: 20px;
+
+                        h3 {
+                            color: $footer_color;
+                            font-weight: normal;
+                        }
+                    }
+                }
+
+                .thirteen {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 100%;
+
+                    .thirteen_one {
+                        margin-bottom: 20px;
+
+                        h3 {
+                            color: $footer_color;
+                            font-weight: normal;
+                        }
+                    }
+
+                    .thirteen_two {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        margin: -80px 0 0 -80px;
+                        cursor: pointer;
+
+                        .thirteen_two_inner {
+                            height: 100px;
+                            width: 100px;
+                            margin: 80px 0 0 80px;
+                            border: 4px solid $menu_color;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .color_change {
+                                background: $primary-color;
+                            }
+
+                            .color_change_change {
+                                background: #1e9cd7;
+                            }
+
+                            h6 {
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            .inward_two_block {
+                padding: 15px 25px;
+                border-bottom: 1px solid $form_color;
+                overflow: hidden;
+                background: #f5f5f5;
+
+                .british_airways {
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+
+                    &::after {
+                        @include inward_after_before;
+                        bottom: -14px;
+                        width: calc(100% - 54px);
+                        left: 31px;
+                    }
+
+                    .british_airways_text {
+                        color: $inwaed_text_color;
+                    }
+
+                    h4 {
+                        color: $footer_color;
+                        font-weight: 500;
+                    }
+                }
+
+                .british_airways_one {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    // margin-top: 8px;
+                }
+
+                .dublin_main_block_holder_holder {
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .dublin_main_block_ninety {
+                        .dublin_main_block_right {
+                            text-align: right;
+                        }
+
+                        .british_airways_text {
+                            color: $inwaed_text_color;
+                            font-weight: 500;
+                        }
+
+                        h4 {
+                            color: $footer_color;
+                            font-weight: 400;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+
+            .inward_pickup_date_time {
+                padding: 10px 35px 50px 25px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 30px;
+
+                .dublin_main_block_two_holder1 {
+                    h4 {
+                        color: $menu_color;
+                        margin: 15px 0 8px 0;
+                    }
+
+                    .airport_name {
+                        position: relative;
+
+                        .airport_name_holder {
+                            input[type="text"] {
+                                @include form_input_type;
+                                padding: 0.6em 4.3em;
+                                font-size: 16px;
+                                color: #495057;
+                            }
+                        }
+                    }
+
+                    .airport_name_images {
+                        position: absolute;
+                        top: 1px;
+                        left: 8px;
+                        height: 43px;
+                        width: 46px;
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 1px;
+                            background-color: $form_color;
+                            top: 20%;
+                            height: calc(100% + -14px);
+                            left: 45px;
+                        }
+                    }
+                }
+            }
+
+            .outward_pickup_date_time {
+                padding: 0 25px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-column-gap: 30px;
+
+                .dublin_main_block_two_holder1 {
+                    h4 {
+                        color: $menu_color;
+                        margin: 15px 0 8px 0;
+                    }
+
+                    .airport_name {
+                        position: relative;
+
+                        .airport_name_holder {
+                            input[type="text"] {
+                                @include form_input_type;
+                                padding: 0.6em 4.3em;
+                                font-size: 16px;
+                                color: #495057;
+                            }
+                        }
+                    }
+
+                    .airport_name_images {
+                        position: absolute;
+                        top: 1px;
+                        left: 8px;
+                        height: 43px;
+                        width: 46px;
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 1px;
+                            background-color: $form_color;
+                            top: 20%;
+                            height: calc(100% + -14px);
+                            left: 45px;
+                        }
+                    }
+                }
+            }
+
+            .twelve_main {
+                display: flex;
+                align-items: stretch;
+
+                height: 100%;
+            }
+
+            .twelve_main_holder {
+                width: 100%;
+            }
+
+            .inward_eight_block {
+                background: #f8f8f8;
+                padding: 0 25px;
+
+                .inward_eight_block_rupee {
+                    padding: 12px 0;
+
+                    h1 {
+                        text-align: center;
+                        font-weight: 800;
+                        font-size: 40px;
+                        color: $menu_color;
+                    }
+                }
+
+                .inward_fourth_block {
+                    @include inward_fourth_fifth_block;
+
+                    .inward_fourth_block_one_inner_holder {
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-gap: 63px;
+                    }
+                }
+
+                .inward_eleven_block {
+                    @include inward_fourth_fifth_block;
+
+                    .inward_fourth_block_one_inner_holder {
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 110px;
+                    }
+                }
+
+                .inward_eight_block_last_block {
+                    width: 81%;
+                    margin: 0 auto;
+                    // display:flex;
+                    // justify-content: space-between;
+                    display: grid;
+                    grid-template-columns: auto auto auto auto;
+                    padding: 0px 0 23px 0;
+
+                    .inward_eight_block_last_block_one {
+                        .inward_eight_block_last_block_one_inner_holder {
+                            display: flex;
+                            align-items: center;
+
+                            .inward_eight_block_last_block_one_inner_two {
+                                h4 {
+                                    color: $footer_color;
+                                    font-weight: 400;
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    .inward_eight_block_last_block_one:nth-child(2),
+                    .inward_eight_block_last_block_one:nth-child(3) {
+                        justify-self: center;
+                    }
+
+                    .inward_eight_block_last_block_one:nth-child(4) {
+                        justify-self: end;
+                    }
+                }
+            }
+
+            .inward_third_block {
+                display: flex;
+                position: relative;
+                // &::after{
+                //     content: '\f061';
+                //     position: absolute;
+                //     font-family: "FontAwesome";
+                //     left: 53%;
+                //     line-height: 47px;
+                //     color:#fff;
+
+                // }
+                .inward_custom_button {
+                    // border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    background: $secondary_color;
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px 0;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    color: $primary-color;
+                    font-size: 18px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+
+                    &:disabled {
+                        background-color: rgba($color: $secondary_color, $alpha: 0.5);
+                    }
+
+                    i {
+                        margin-left: 10px;
+                    }
+                }
+
+                .inward_custom_button_one_one {
+                    background: $inwaed_text_color;
+                    border-bottom-right-radius: 0px;
+                    border-bottom-left-radius: 15px;
+                }
+
+                .inward_custom_button_one {
+                    border-bottom-right-radius: 0px;
+                    border-bottom-left-radius: 15px;
+                    border-right: 1px dotted $primary-color;
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+
+                .inward_custom_button_one_border {
+                    border-right: none;
+                }
+
+                .inward_custom_button_two {
+                    // border-bottom-left-radius: 0px;                    display: flex;
+                    align-items: center;
+                }
+
+                .inward_custom_button_two_color {
+                    background: $secondary_color;
+                }
+
+                .inward_custom_button_two_color.disabled {
+                    opacity: 0.5;
+                }
+
+                .return_custom_button_two_color {
+                    background: $secondary_color;
+                }
+
+                .return_custom_button_one_color {
+                    background: $button-one-color;
+                }
+            }
+        }
+    }
+}
+
+// date-picker
+.datepicker_airport_name_holder {
+    .input-group-append {
+        display: none;
+    }
+}
+
+.select_holder {
+    @include differnt_input_type;
+
+    // padding: 0 1.2em;
+    & {
+        *::selection {
+            background-color: transparent;
+        }
+    }
+
+    .select_value {
+        display: block;
+        width: 100%;
+        padding: 0 4.3em;
+        border: unset;
+        outline: none !important;
+        cursor: pointer;
+    }
+
+    .fas {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        color: #ccc;
+        font-size: 30px;
+    }
+
+    .option_holder {
+        position: absolute;
+        top: 45px;
+        width: 100%;
+        left: 0;
+        box-shadow: 0 0 5px #ccc;
+        display: none;
+        z-index: 999999999;
+
+        .options {
+            cursor: pointer;
+            padding: 0.8em 1em;
+            width: 100%;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 99999999;
+}
+
+// date-picker
+// time-picker
+.datepicker_airport_name_holder {
+    .input-group-append {
+        display: none;
+    }
+}
+
+.select_holder {
+    @include differnt_input_type;
+
+    // padding: 0 1.2em;
+    & {
+        *::selection {
+            background-color: transparent;
+        }
+    }
+
+    .select_value {
+        display: block;
+        width: 100%;
+        padding: 0 4.3em;
+        border: unset;
+        outline: none !important;
+        cursor: pointer;
+    }
+
+    .fas {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        color: #ccc;
+        font-size: 30px;
+    }
+
+    .option_holder {
+        position: absolute;
+        top: 45px;
+        width: 100%;
+        left: 0;
+        box-shadow: 0 0 5px #ccc;
+        display: none;
+        z-index: 999999999;
+
+        .options {
+            cursor: pointer;
+            padding: 0.8em 1em;
+            width: 100%;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+}
+
+.overlay,
+.time_picker_container_overlay {
+    display: none;
+}
+
+.overlay,
+.overlay_timepicker {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 99999998;
+}
+
+.gj-picker-bootstrap table tr td.today div {
+    color: #1097d6 !important;
+}
+
+.gj-picker-bootstrap table tr td.selected.gj-cursor-pointer div {
+    color: #fff !important;
+    background-color: #1097d6 !important;
+    border-color: #0d7aac !important;
+}
+
+.time_picker_container_overlay {
+    .time_picker {
+        user-select: none;
+        position: absolute;
+        top: -150px;
+        //bottom: -104px;
+        left: 0;
+        background-color: #fff;
+        z-index: 99999998;
+        padding: 4px;
+        padding-right: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+
+        .fas {
+            &::before {
+                font-size: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// time-picker
+
+#pickup_hour-error,
+#pickup_minute-error,
+#arrival_hour-error,
+#arrival_minute-error,
+#airline_name_input-error {
+    white-space: pre-wrap !important;
+    display: none !important;
+}
+
+#error_arrival,
+#error_pickup {
+    display: none;
+}
+
+label.error,
+label.error-custom {
+    position: absolute;
+    bottom: -22px !important;
+    width: 100%;
+    left: 0px;
+    white-space: nowrap;
+    font-size: 12px;
+    // color: #f69e1b;
+    color: #ff0000;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.forget_password {
+    padding-right: 18px;
+}
+
+.inward_main_block_holder_one {
+    margin-top: 0px;
+}
+
+.outward_main_block_holder_one {
+    padding-bottom: 50px;
+}
+
+.outward_main_block_holder_one {
+    .inward_menu_bottom_inner {
+        padding: 10px 25px 0 25px !important;
+    }
+}
+
+.inward_two_block_outward1 {
+    margin: 0 25px;
+}
+
+.dublin_main_block_input {
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: calc(100% - 40px);
+    cursor: default;
+    text-overflow: ellipsis;
+    color: #fff !important;
+    padding: 0 0.5em;
+}
+
+.select2-container {
+    display: block !important;
+    width: 89% !important;
+    margin-left: 52px !important;
+    height: 45px !important;
+}
+
+.select2-selection {
+    height: 45px;
+}
+
+.select2-dropdown--below {
+    margin-left: -52px !important;
+}
+
+.border_unset {
+    border: unset !important;
+}
+
+.glow_off {
+    box-shadow: unset !important;
+    outline: none !important;
+}
+
+.border_form_color {
+    border: 1px solid $form_color;
+}
+
+.trip-second-section {
+    p.time {
+        text-align: right;
+    }
+}
+
+.select_round {
+    border-radius: 20px;
+    // overflow: hidden;    position: relative;
+
+    select {
+        height: 43px !important;
+        -webkit-appearance: none !important;
+        border-radius: 20px;
+    }
+
+    .select_rounded_label {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        pointer-events: none;
+
+        .fas {
+            color: $form_color;
+
+            &::before {
+                font-size: 30px !important;
+            }
+        }
+    }
+}
+
+.step_four_inward_main_block_holder {
+    height: 100% !important;
+}
+
+.thank_you_section {
+    h1 {
+        color: #fff;
+        // text-shadow: 0 0 5px #ccc;
+    }
+}
+
+.font_FAF {
+    font-family: "Font Awesome 5 Free" !important;
+}
+
+.inward_step_4_save {
+    display: none;
+
+    .inward_five_block_one {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f69e1b;
+
+            &::before {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+.orange_error {
+    color: #f69e1b !important;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.px_both {
+    padding: 0.6em 70px !important;
+}
+
+.inward_four_progress {
+    justify-content: space-between;
+    align-items: center;
+
+    .text-left,
+    .text-right {
+        width: calc(100% - 42px);
+    }
+
+    .left_part,
+    .right_part {
+        min-width: 200px;
+        max-width: 200px;
+        height: 50px;
+        justify-content: space-between;
+
+        .fa-angle-down {
+            display: none;
+        }
+    }
+
+    .center_part {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 40px;
+        position: relative;
+        width: 100%;
+        height: 90px;
+
+        .fa-angle-down {
+            display: none;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: 35px;
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px dashed #d5d5d5;
+        }
+
+        .inside_div {
+            position: relative;
+            height: 50px;
+
+            p {
+                width: 200px;
+                height: 50px;
+                overflow-y: hidden;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 6px;
+                    width: 50px;
+                    height: 15px;
+                    background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0) 0, #fff 100%);
+                    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0, #fff 100%);
+                    background-image: -ms-linear-gradient(to right, rgba(255, 255, 255, 0) 0, #fff 100%);
+                    right: 0;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -9px;
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                background-color: #151514;
+                z-index: 9999;
+            }
+        }
+    }
+}
+
+#plus_minus {
+    display: none;
+}
+
+
+.dropdown-item {
+    color: #595959;
+}
+
+@media (min-width:992px) {
+    .dropdown {
+        .dropdown-menu {
+            top: 95% !important;
+        }
+
+        &:hover {
+            .dropdown-menu {
+                display: block;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 991px) and (min-width: 766px) {
+    .menu_bottom {
+        .menu_bottom_inner {
+
+            .menu_bottom_inner_three,
+            .menu_bottom_inner_two,
+            .menu_bottom_inner_one {
+                .menu_bottom_inner_one_text {
+                    h2 {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) and (min-width: 581px) {
+    .navbar-header {
+        height: 59px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    #plus_minus {
+        display: block;
+    }
+
+    .dropdown-item {
+        font-weight: 700;
+    }
+
+    .navbar .my_menu {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: unset;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+    }
+
+    .inward_pickup_date_time {
+        padding-bottom: 10px !important;
+    }
+
+    .navbar {
+        .my_menu li:nth-child(4):after {
+            display: none;
+        }
+    }
+
+    .menu_bottom {
+        height: 100%;
+        padding-top:196px;
+
+        .menu_bottom_inner {
+            grid-gap: 24px;
+        }
+    }
+
+    .reason_of_book {
+        .reason_of_book_text_box_inner {
+            grid-gap: 99px;
+        }
+    }
+
+    .footer_above {
+        .footer_above_inner {
+            grid-gap: 80px;
+        }
+    }
+
+    .navbar-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        // height: 74px;
+    }
+
+    .my_menu_holder {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999999999999;
+    }
+
+    .navbar .nav-item {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .navbar .navbar-nav>li>a>span {
+        font-weight: bold !important;
+        font-size: 20px;
+
+
+    }
+
+
+
+    .navbar .navbar-nav>.active>a,
+    .navbar .navbar-nav>.active>a:hover,
+    .navbar .navbar-nav>.active>a:focus {
+        background-color: $menu_color !important;
+        color: #fff !important;
+        border-bottom: 1px solid #fff;
+    }
+
+    .navbar .navbar-nav li a span:hover {
+        color: #fff !important;
+    }
+
+    .navbar .navbar-nav>li>a:hover {
+        background-color: $menu_color !important;
+        color: #fff !important;
+
+        &::before {
+            content: unset !important;
+        }
+    }
+
+    .navbar-light .navbar-nav .menu_item_bg_blue {
+        background-color: $menu_color;
+        color: #fff !important;
+    }
+
+    .dropdown-toggle {
+        position: relative;
+
+        i {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+        }
+
+        &::after {
+            content: unset;
+        }
+    }
+
+    .dropdown-menu {
+        position: unset !important;
+        width: 100%;
+        border: 0;
+
+        .dropdown-item {
+            text-align: center;
+
+            &:hover {
+                background-color: $menu_color;
+                color: #fff;
+            }
+        }
+    }
+
+    .my_menu_holder_inner {
+        background-color: #fff;
+    }
+
+
+    .my_menu_holder_inner:after {
+        content: "";
+        background: #e0e0e0;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 74px;
+    }
+
+    .navbar-toggler {
+        outline: none !important;
+    }
+
+    .airport_transport {
+        .airport_transport_main_text {
+            height: 156px;
+        }
+    }
+
+    .signin_form {
+        height: auto;
+        padding: 196px 0;
+
+        .signin_form_main_block {
+            width: 45%;
+        }
+    }
+
+    .inward_menu_bottom {
+        height: 100%;
+
+        .inward_menu_bottom_block {
+            margin: 50px 0;
+
+            .inward_main_block_holder {
+                height: 100%;
+
+                .inward_menu_bottom_inner {
+                    .inward_two_block_holder {
+                        .dublin_main_block_two {
+                            .dublin_main_block_two_holder1 {
+                                .airport_name {
+                                    .airport_name_holder input[type="text"] {
+                                        padding: 0.6em 0.6em 0.6em 4.3em;
+                                        color: #495057;
+                                    }
+                                }
+                            }
+                        }
+
+                        .dublin_main_block_inner {
+                            grid-template-columns: 1fr 1fr;
+                            grid-column-gap: 30px;
+                            grid-row-gap: 0px;
+                        }
+
+                        .dublin_main_block {
+                            .dublin_main_block_one {
+                                div {
+
+                                    span,
+                                    .dublin_block_destination_text {
+                                        font-size: 14px !important;
+                                    }
+
+                                    .dublin_block_destination-text {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .inward_five_block {
+                        grid-template-columns: 15fr 1fr;
+                        grid-gap: 0px;
+
+                        .inward_five_block_inner_one {
+                            grid-gap: 30px;
+
+                            .inward_five_block_one {
+                                * {
+                                    display: inline-block !important;
+                                }
+
+                                input {
+                                    width: 100px;
+                                }
+
+
+                            }
+
+                            .inward_five_block_one:nth-child(3) {
+                                justify-self: flex-end;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .inward_six_block {
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-column-gap: 20px;
+
+                    }
+
+                    .inward_nine_main_block {
+                        .inward_nine_block {
+                            width: 60%;
+                            margin-left: 0px;
+                        }
+                    }
+                }
+
+                .inward_eight_block {
+                    .inward_eight_block_last_block {
+                        grid-template-columns: 1fr 1fr;
+                        grid-column-gap: 30px;
+                        grid-row-gap: 10px;
+
+                        .inward_eight_block_last_block_one:nth-child(2) {
+                            justify-self: flex-end;
+                        }
+
+                        .inward_eight_block_last_block_one:nth-child(3) {
+                            justify-self: flex-start;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.address_and_back_holder {
+    .container {
+        .border_area {
+            border: 2px solid $form_color;
+            border-bottom: 0;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            overflow: hidden;
+            padding: 0 2em 0 calc(3em + 10px);
+        }
+    }
+}
+
+.details_part {
+    .container {
+        .border_area {
+            border: 2px solid $form_color;
+            border-top: 0;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            overflow: hidden;
+            padding: 0 2em;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .profile_tab_inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .profile_password {
+        div.old_password_container {
+            grid-column: unset;
+            width: 100%;
+        }
+    }
+
+    .menu_bottom {
+        .menu_bottom_inner {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .reason_of_book {
+        .reason_of_book_text_box_inner {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 40px;
+        }
+    }
+
+    .footer_above {
+        height: 100%;
+
+        .footer_above_inner {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
+            padding-bottom: 65px;
+
+            .footer_above_text_block {
+                display: block !important;
+            }
+        }
+    }
+
+    .airport_transport {
+        .airport_transport_main_text {
+            height: 186px;
+        }
+    }
+
+    .reason_of_book {
+        .reason_of_book_text_box {
+            .reason_of_book_text_box_main_text_box {
+                height: 150px;
+            }
+        }
+    }
+
+    .signin_form {
+        .signin_form_main_block {
+            width: 80%;
+        }
+    }
+
+    .address_and_back_holder {
+        .container {
+            .border_area {
+                .d-flex.justify-content-between {
+                    flex-direction: column;
+                    position: relative;
+
+                    .details_page_tags {
+                        margin-left: calc(-2em - 5px);
+                        order: 2;
+                        padding-bottom: 10px;
+
+                        .tag_booking {
+                            text-align: center;
+                        }
+                    }
+
+                    .address.position-relative {
+                        order: 1;
+
+                        p.mt-3 {
+                            margin-bottom: 1rem;
+                        }
+                    }
+
+                    .back {
+                        order: 1;
+                        margin-left: calc(-2.5em - 5px);
+                        position: absolute;
+                        top: 2px;
+
+                        h4 {
+                            i {
+                                display: block !important;
+                            }
+
+                            p {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .inward_pickup_date_time {
+        grid-template-columns: 1fr !important;
+        grid-row-gap: 20px;
+    }
+
+    .outward_pickup_date_time {
+        grid-template-columns: 1fr !important;
+        grid-row-gap: 20px;
+    }
+
+    .arrow-svg {
+        right: 0 !important;
+    }
+
+    label#pickup_hour-error,
+    label#arrival_hour-error {
+        left: -40px !important;
+    }
+
+    .outward_six_block {
+        grid-template-columns: 1fr !important;
+    }
+
+    .inward_menu_bottom {
+        height: 100%;
+
+        .inward_menu_bottom_block {
+            margin: 50px 0;
+
+            .inward_main_block_holder {
+                height: 100%;
+
+                .inward_menu_bottom_inner {
+                    display: block !important;
+                    .inward_up_blocks {
+                        display: block !important;
+                    }
+                    .inward_two_block_holder {
+                        .dublin_main_block_two {
+                            grid-template-columns: 1fr;
+                        }
+
+                        .dublin_main_block_inner {
+                            grid-template-columns: 1fr;
+                            grid-gap: 10px;
+                        }
+
+                        .dublin_main_block {
+                            .dublin_main_block_one {
+                                // flex-direction: column;
+
+                                div {
+                                    width: 48%;
+
+                                    span:nth-child(1) {
+                                        display: block;
+                                    }
+
+                                    .dublin_block_destination-text-one {
+                                        display: none;
+                                        text-align:right;
+                                    }
+                                    
+
+                                    span,
+                                    .dublin_block_destination_text {
+                                        font-size: 17px !important;
+                                    }
+
+                                    .dublin_block_destination-text {
+                                        font-size: 17px;
+                                    }
+                                }
+                                div:last-child{
+                                    span.d-block{
+                                        text-align:right;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .inward_two_block {
+                        .british_airways {
+                            h6 {
+                                font-size: 17px;
+                            }
+                        }
+
+                        .dublin_main_block_holder_holder {
+                            flex-direction: column;
+
+                            .dublin_main_block_ninety {
+                                .dublin_main_block_right {
+                                    text-align: left;
+                                }
+
+                                h6 {
+                                    margin-bottom: 0px;
+                                    font-size: 20px;
+                                }
+                            }
+
+                            .dublin_main_block_ninety:nth-child(1) {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+
+                    .inward_five_block {
+                        grid-template-columns: 1fr;
+                        position: relative;
+
+                        .inward_five_block_inner_one {
+                            grid-template-columns: 1fr;
+                            grid-gap: 15px;
+
+                            .inward_five_block_one {
+                                * {
+                                    display: flex !important;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+
+                        .inward_five_block_one:nth-child(3) {
+                            justify-self: flex-start !important;
+                        }
+
+                        .inward_five_block_inner_one_holder,
+                        .inward_step_4_save {
+                            position: relative;
+                            right: 0px;
+                            top: 8px;
+                        }
+
+                        // .inward_step_4_save{
+
+                        // }
+                    }
+
+                    .inward_four_progress .text-right {
+                        width: 100%;
+                        text-align: center !important;
+                    }
+
+                    .inward_four_progress {
+                        .right_part {
+                            width: 100%;
+
+                            .text-left {
+                                text-align: center !important;
+                            }
+                        }
+                    }
+
+                    .inward_six_block {
+                        grid-template-columns: repeat(2, 1fr);
+
+                        .inward_six_block_one_inner_one {
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    .inward_nine_main_block {
+                        .inward_nine_block {
+                            width: 65%;
+                            margin-left: 0px;
+
+                            .inward_nine_block_inner {
+                                .inward_nine_one {
+                                    .inward_nine_one_block_one {
+                                        h4 {
+                                            font-size: 14px;
+                                            font-weight: normal;
+                                        }
+
+                                        h1 {
+                                            font-size: 20px;
+                                        }
+                                    }
+
+                                    .inward_nine_one_block_two {
+                                        span {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .inward_eight_block {
+                    .inward_eight_block_last_block {
+                        // justify-content: flex-start !important;
+                        // flex-wrap: wrap;
+                        width: 100% !important;
+                        grid-column-gap: 30px;
+                        grid-row-gap: 10px;
+                        grid-template-columns: 1fr 1fr;
+
+                        .inward_eight_block_last_block_one {
+                            .inward_eight_block_last_block_one_inner_holder {
+                                .inward_eight_block_last_block_one_inner_two {
+                                    h4 {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .inward_fourth_block {
+                        &::after {
+                            display: none;
+                        }
+
+                        flex-direction: column;
+
+                        .inward_fourth_block_one_inner_holder {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .inward_menu_bottom {
+        .inward_menu_bottom_block {
+            .inward_main_block_holder {
+                .inward_third_block {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    .trip-second-section {
+
+        .triple_section_block {
+            .d-flex.justify-content-between.w-100 {
+                flex-direction: column;
+                text-align: center;
+
+                .ml-4 {
+                    margin-left: 0 !important;
+                }
+            }
+
+            .all_via {
+                p {
+                    margin-top: 0 !important;
+                    margin-bottom: 0px !important;
+                }
+            }
+        }
+
+        .time {
+            text-align: left !important;
+        }
+
+        div {
+            text-align: left;
+            margin-bottom: 10px;
+
+            .ml-4 {
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    .trip-tab {
+        .trip-first-section {
+            display:flex !important;
+            padding:0 20px;
+            h4.w_100px.text-right.mb-0.font-weight-bold.price.primary_text_color.font_20 {
+                text-align: center !important;
+            }
+
+            .tags {
+                margin-left: 0;
+            }
+
+            p.tag_booking.text-uppercase {
+                margin-top: 10px;
+            }
+        }
+
+
+
+        .trip-third-section {
+            .d-flex.justify-content-between.w-50 {
+                flex-direction: column;
+                width: 100% !important;
+                text-align: center;
+
+                p.name.footer_color {
+                    margin-left: 0;
+                }
+
+                p.ml-2.email.footer_color {
+                    margin-left: 0 !important;
+                }
+            }
+
+            p.contact.footer_color {
+                margin-left: 0;
+                text-align: left;
+            }
+        }
+    }
+
+    .details_part {
+        .border_area {
+            .border_bottom_dashed.flight_details_holder {
+                text-align: left;
+
+                .mt-3.d-flex.justify-content-between.align-items-end {
+                    flex-direction: column;
+                    text-align: left;
+
+                    div {
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            .border_bottom_dashed.trip_details_holder {
+                text-align: left;
+
+                .d-grid.trip_details_grid.mt-2 {
+                    grid-template-columns: 1fr;
+                }
+
+                .d-grid.via_details_grid.mt-2 {
+                    text-align: left;
+                    grid-template-columns: 1fr;
+                }
+
+                .other_details.mt-3 {
+                    text-align: left;
+
+                    .d-grid.other_details_grid.mt-2 {
+                        grid-template-columns: 1fr;
+                    }
+                }
+            }
+
+            .payment_details_holder.py-3 {
+                .d-flex.justify-content-end {
+                    .booking_details.text-right.mt-2 {
+                        text-align: left !important;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .border_bottom_dashed.contact_information_holder.py-3 {
+                text-align: left;
+
+                .d-grid.contact_info_grid.mt-2 {
+                    grid-template-columns: 1fr;
+                    justify-items: left;
+                    grid-row-gap: 5px;
+
+                }
+            }
+
+            .payment_details_holder.py-3 {
+                text-align: left;
+
+                .d-flex.justify-content-between {
+                    flex-direction: column;
+
+                    .booking_details.text-right.mt-2 {
+                        text-align: left !important;
+                    }
+
+                    .d-flex.align-items-center {
+                        width: 100%;
+                        text-align: left;
+
+                        .payment_details {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .d-flex.justify-content-end.mt-4.pb-4 {
+                    justify-content: flex-start !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 634px) {
+    .signin_form {
+        .signin_form_main_block {
+            .signin_form_main_block_inner {
+                .remember_password {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .navbar-header {
+        height: 74px;
+    }
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .signin_form {
+        .signin_form_main_block {
+            width: 85%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .menu_bottom {
+        .menu_bottom_inner {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .reason_of_book {
+        .reason_of_book_text_box_inner {
+            grid-template-columns: 1fr;
+            grid-gap: 0px;
+        }
+    }
+
+    .footer_above {
+        .footer_above_inner {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .airport_transport {
+        .airport_transport_main_block {
+            h3 {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .airport_transport {
+        .airport_transport_main_text {
+            height: auto;
+        }
+    }
+
+    .reason_of_book {
+        .reason_of_book_text_box {
+            .reason_of_book_text_box_main_text {
+                h3 {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    .signin_form {
+        .signin_form_main_block {
+            width: 90%;
+        }
+    }
+
+    .inward_menu_bottom {
+        .inward_menu_bottom_block {
+            .inward_main_block_holder {
+                .inward_menu_bottom_inner {
+                    .inward_nine_main_block {
+                        .inward_nine_block {
+                            width: 80%;
+
+                            .inward_nine_block_inner {
+                                .inward_nine_one {
+                                    .inward_nine_one_block_one {
+                                        h4 {
+                                            font-size: 14px;
+                                            font-weight: normal;
+                                        }
+
+                                        h1 {
+                                            font-size: 20px;
+                                        }
+                                    }
+
+                                    .inward_nine_one_block_two {
+                                        span {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .inward_eight_block {
+                    .inward_eight_block_last_block {
+                        width: 100% !important;
+                        grid-column-gap: 30px;
+                        grid-row-gap: 10px;
+                        grid-template-columns: 1fr;
+
+                        .inward_eight_block_last_block_one {
+                            .inward_eight_block_last_block_one_inner_holder {
+                                .inward_eight_block_last_block_one_inner_two {
+                                    h4 {
+                                        font-size: 17px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .inward_eight_block_last_block_one:nth-child(2),
+                        .inward_eight_block_last_block_one:nth-child(3),
+                        .inward_eight_block_last_block_one:nth-child(4) {
+                            justify-self: flex-start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 444px) {
+    .reason_of_book {
+        .reason_of_book_text_box {
+            .reason_of_book_text_box_main_text_box {
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .inward_menu_bottom {
+        .inward_menu_bottom_block {
+            .inward_main_block_holder {
+                .inward_menu_bottom_inner {
+                    .inward_nine_main_block {
+                        .inward_nine_block {
+                            .inward_nine_block_inner {
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .airport_transport {
+        .airport_transport_main_block {
+            h3 {
+                font-size: 22px;
+            }
+
+            &::after {
+                top: 40px;
+            }
+        }
+    }
+
+    .reason_of_book {
+        .reason_of_book_text_box {
+            .reason_of_book_text_box_main_text {
+                h3 {
+                    font-size: 22px;
+                }
+
+                &::after {
+                    top: 40px;
+                }
+            }
+        }
+    }
+
+    .signin_form {
+        .signin_form_main_block {
+            width: 93%;
+        }
+    }
+
+    .inward_menu_bottom {
+        .inward_menu_bottom_block {
+            .inward_main_block_holder {
+                .inward_menu_bottom_inner {
+                    .inward_one_block {
+                        .flight_number {
+                            .flight_number_tel input[type="text"] {
+                                padding: 0.6em 0.3em 0.6em 4.3em;
+                                color: #495057;
+                            }
+                        }
+                    }
+
+                    .dublin_main_block_two {
+                        .dublin_main_block_two_holder1 {
+                            .airport_name {
+                                .airport_name_holder input[type="text"] {
+                                    padding: 0.6em 0.1em 0.6em 4.3em !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 334px) {
+    .inward_menu_bottom {
+        .inward_menu_bottom_block {
+            .inward_main_block_holder {
+                .inward_menu_bottom_inner {
+                    .inward_two_block {
+                        .british_airways {
+                            h4 {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .dublin_main_block_holder_holder {
+                            .dublin_main_block_ninety {
+                                h4 {
+                                    font-size: 14px;
+                                }
+
+                                h6 {
+                                    font-size: 17px;
+                                }
+                            }
+
+                            .dublin_main_block_ninety:nth-child(1) {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.airport_name_holder.select-airport {
+    border: 1px solid #d5d5d5;
+    border-radius: 20px;
+
+    .select2-container {
+        .select2-selection--single {
+            height: 45px;
+            border-radius: 20px;
+            border: 0;
+            outline: none !important;
+
+            .select2-selection__rendered {
+                line-height: 45px;
+
+                .select2-selection__clear {
+                    display: none;
+                }
+            }
+
+            .select2-selection__arrow {
+                height: 42px;
+            }
+        }
+    }
+}
+
+#inward_step1_form {
+    .inward_custom_button_one_color {
+        border-bottom-left-radius: 15px;
+    }
+}
+
+input.inward_custom_button.inward_custom_button_two.return_custom_button_two_color {
+    border-bottom-left-radius: 0px !important;
+}
+
+#inward_step1_form {
+    .inward_custom_button {
+        border-bottom-left-radius: 15px;
+    }
+}
+
+input.inward_custom_button.inward_custom_button_two {
+    border-bottom-left-radius: 15px;
+}
+
+.menu_bottom_inner {
+    .menu_bottom_inner_one_text {
+        padding-bottom: 7px;
+    }
+}
+
+.dublin_main_block_two_holder1 h4 {
+    color: #1097d6;
+    margin: 15px 0 8px 0;
+}
+
+@media (max-width: 900px) and (min-width: 762px) {
+    .select2-container {
+        width: 80% !important;
+    }
+
+    .inward_menu_bottom {
+        .inward_menu_bottom_block {
+            .inward_main_block_holder {
+                .inward_menu_bottom_inner {
+                    .inward_fourth_block {
+                        &::after {
+                            bottom: 15%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .select2-container {
+        width: 70% !important;
+    }
+
+    .inward_menu_bottom {
+        .inward_menu_bottom_block {
+            .inward_main_block_holder {
+                .inward_menu_bottom_inner {
+                    .inward_fourth_block {
+                        &::after {
+                            bottom: 15%;
+                            width: calc(100% - 170px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .inward_menu_bottom .inward_menu_bottom_block .inward_main_block_holder .inward_menu_bottom_inner .thirteen .thirteen_two {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .inward_five_block {
+        .inward_five_block_inner_one {
+            grid-gap: 30px !important;
+        }
+    }
+
+    .inward_four_progress {
+        flex-direction: column;
+        justify-content: center;
+
+        // .left_part {
+        //     flex-direction: column-reverse;
+        // }
+
+        // .right_part {
+        //     flex-direction: column;
+        // }
+        .image,
+        .downing_block {
+            margin: 20px 0;
+        }
+
+        .left_part,
+        .right_part {
+            height: 100% !important;
+            flex-direction: column-reverse;
+            min-width: unset;
+            max-width: unset;
+            text-align: center;
+
+            .fa-angle-down {
+                display: block;
+            }
+        }
+
+        .center_part {
+            flex-direction: column;
+            padding-bottom: 0 !important;
+            height: auto;
+
+            .fa-angle-down {
+                display: block;
+            }
+
+            &::after {
+                display: none;
+            }
+
+            .inside_div {
+                p {
+                    width: 100%;
+                    height: 100%;
+
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                &::after {
+                    display: none;
+                }
+
+                height: 100% !important;
+            }
+        }
+    }
+}
+
+.country_code_box {
+    position: absolute;
+    line-height: 45px;
+    z-index: 9;
+    width: 100px;
+
+    span#basic-addon1 {
+        background: transparent;
+        height: 45px;
+        border: 0;
+        z-index: 9;
+
+        select#country_code {
+            width: 90px;
+            border: 0;
+            padding: 0px 5px;
+            background: transparent;
+            height: 45px;
+            border-right: 1px solid #d5d5d5;
+            color: #495057;
+            font-size: 14px;
+            outline: 0;
+            -webkit-appearance: none;
+        }
+    }
+}
+
+input#phone {
+    padding-left: 120px;
+    outline: 0;
+}
+
+input#phone:focus {
+    box-shadow: none;
+}
+
+label#phone-error {
+    padding-left: 0px;
+}
+
+// My Booking tab
+
+.my-booking-tabs {
+    background-color: #fff;
+    border-radius: 7px;
+
+    // border: 2px solid #ccc;
+    .nav-tabs {
+        border-bottom: 1px solid #dee2e6;
+        background-color: #404040;
+        border-radius: 5px 5px 0 0;
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        .nav-item {
+            // margin-right: 30px;
+            border-right: 1px solid #fff;
+            text-align: center;
+
+            &:nth-child(4) {
+                margin-right: unset;
+                border-right: 0;
+            }
+
+            .nav-link {
+                color: #fff;
+
+                &.active {
+                    background-color: #1698d4;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        border: 2px solid #ccc;
+        border-top: 0;
+        padding: 10px 0;
+    }
+}
+
+.inward_main_block_holder.step_four_inward_main_block_holder {
+    .inward_five_block_one {
+        .d-flex {
+            span {
+                color: #a4a4a4;
+            }
+        }
+    }
+}
+
+section.my_booking_menu_bottom {
+    padding: 4em 0;
+}
+
+.page-header {
+    background-color: #f2f2f2;
+    padding: 1em 0;
+    position: relative;
+    z-index: -1;
+
+    h1 {
+        font-weight: 400;
+        padding: 0.5em 0;
+    }
+}
+
+.all-trip-tab {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    .trip-tab {
+        width: 100%;
+        padding: 0 1em 1em 4em;
+
+        .trip-first-section {
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            .d-flex.align-items-center.position-relative{
+                justify-self: flex-start;
+            }
+            .tags{
+                justify-self: center;
+                margin-left: 0;
+            }
+            h4.w_100px.text-right.mb-0.font-weight-bold.price.primary_text_color.font_20{
+                justify-self: flex-end;
+            }
+        }
+
+        
+        .trip-second-section,
+        .trip-third-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 7px 0;
+        }
+    }
+
+    a.trip-tab-details {
+        font-size: 20px;
+        color: #888888;
+        padding: 10px 20px 0;
+        display: flex;
+    }
+}
+
+.inward_main_block_holder {
+    .card_down_step {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .payment_options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em 0 0;
+
+        img {
+            width: 20%;
+        }
+    }
+}
+
+section.signin_form.thank_you_section {
+    .inward_menu_bottom {
+        background: transparent;
+
+        .inward_menu_bottom_block {
+            text-align: center;
+            padding: 2em;
+
+            p {
+                font-size: 100px;
+                color: #6ac259;
+                margin: 0.3em 0;
+            }
+
+            h1 {
+                color: #888;
+                font-weight: 400;
+            }
+
+            h2 {
+                font-size: 24px;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            h4 {
+                color: #888;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+        }
+
+        .inward_third_block {
+            display: flex;
+            position: relative;
+
+            a.inward_custom_button.inward_custom_button_two {
+                border-bottom-right-radius: 15px;
+                border-bottom-left-radius: 15px;
+                background: #fa9f1b;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                padding: 10px 0;
+                width: 100%;
+                border: none;
+                outline: none;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 600;
+                cursor: pointer;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                margin-top: -20px;
+            }
+        }
+    }
+}
+
+a.inward_custom_button.inward_custom_button_two.inward_custom_button_two_color.disabled {
+    opacity: 0.5;
+}
+
+.resend_verify_code {
+    text-align: right;
+    margin-top: 10px;
+
+    a.signin_custom_button {
+        margin-right: 15px;
+    }
+}
+
+label#invalid_email {
+    display: none !important;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+}
+
+span#flight_error {
+    position: relative;
+    top: 2px;
+    font-weight: bold;
+}
+
+.airport_name_holder {
+    .time-picker {
+        width: 100%;
+        outline: none;
+        font-size: 14px;
+        display: inline-block;
+        background: transparent;
+        border: 1px solid #d5d5d5;
+        border-radius: 18px;
+        padding: 0.6em 0.5em 0.6em 3.3em;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+
+        .hour,
+        .minutes {
+            width: 40%;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            select {
+                width: 100%;
+                border: 0;
+                outline: 0;
+                background: transparent;
+                color: #495057;
+                -webkit-appearance: none;
+                padding: 0 10px;
+            }
+
+            .arrow-svg {
+                position: absolute;
+                top: auto;
+                right: 0.571rem;
+                width: 1rem;
+                height: 0.8rem;
+                pointer-events: none;
+            }
+        }
+
+        .hour::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            background-color: #d5d5d5;
+            top: 0%;
+            height: calc(100%);
+            // left: 45px;
+            right: -25%;
+        }
+    }
+}
+
+label#pickup_hour-error,
+label#arrival_hour-error,
+label#pickup_minute-error,
+label#arrival_minute-error {
+    left: 0;
+    top: 40px;
+}
+
+label#flight_number-error {
+    bottom: 11px !important;
+}
+label#promo_code-error {
+        position: absolute;
+    /*bottom: -22px !important;*/
+    width: 100%;
+    left: 0px;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #ff0000;
+    margin-bottom: 0;
+    font-weight: bold;
+    bottom: 11px !important;
+}
+
+@media (max-width: 767px) {
+    .inward_main_block_holder {
+        .card_down_step {
+            grid-template-columns: 1fr;
+        }
+
+        .payment_options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2em 0;
+
+            img {
+                width: 60%;
+            }
+        }
+    }
+
+    label#phone-error {
+        padding-left: 0px;
+    }
+
+    .inward_menu_bottom .inward_menu_bottom_block .inward_main_block_holder .inward_menu_bottom_inner .inward_seven_block .driver_tip {
+        width: 100%;
+    }
+
+    section.signin_form.thank_you_section .inward_menu_bottom .inward_third_block a.inward_custom_button.inward_custom_button_two {
+        margin-top: -60px;
+    }
+
+    .trip-second-section {
+        div {
+            width: 100% !important;
+            flex-direction: column;
+        }
+    }
+
+    .trip-third-section {
+        .d-flex.justify-content-start.w-50 {
+            width: 100% !important;
+            flex-direction: column;
+
+            p.pl-2.ml-2.email.footer_color {
+                width: 100% !important;
+                padding-left: 0 !important;
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    .all-trip-tab {
+        flex-direction: column;
+        padding-bottom: 30px;
+
+        .trip-tab {
+            padding: 20px 1em 0;
+
+            .trip-first-section,
+            .trip-second-section,
+            .trip-third-section {
+                flex-direction: column;
+
+                h4,
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .collapse.navbar-collapse{
+        overflow:scroll !important;
+        height:100vh !important;
+    }
+    ul.navbar-nav.my_menu{
+        overflow-y: scroll;
+    }
+    .my-booking-tabs {
+        .nav-tabs {
+            .nav-item {
+                .nav-link {
+                    padding: 0.5rem 0.3rem;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .all-trip-tab a.trip-tab-details {
+        padding: 0;
+    }
+}
+
+.d-grid {
+    display: grid;
+}
+
+.trip_details_grid,
+.other_details_grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.via_details_grid,
+.contact_info_grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.intl-tel-input {
+    display: block;
+    width: 100%;
+}
+
+.intl-tel-input.allow-dropdown .flag-container .selected-flag {
+    background: transparent !important;
+    outline: none !important;
+}
+
+
+
+
+.w_100px {
+    width: 100px;
+}
+
+.trip-first-section {
+    .tags {
+        margin-left: -1.5em;
+    }
+}
+
+.tag_booking {
+    background-color: $footer_color;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    // margin-left: -15px;
+}
+
+.no_outline {
+    border: unset !important;
+    outline: none !important;
+    box-shadow: unset !important;
+}
+
+.number_holder_step4 {
+    background-color: transparent;
+    color: #a4a4a4;
+    padding-right: 5px;
+    margin-top: 1px;
+}
+
+.loader {
+    animation: spin 2s linear infinite;
+}
+
+.numbers_holder_step4 {
+    height: 24px;
+
+    &.edit_on {
+        &::after {
+            left: 2.9rem !important;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        top: 50%;
+        height: 20px;
+        left: 2.6rem;
+        content: "";
+        width: 1px;
+        background-color: #a4a4a4;
+        transform: translateY(-50%);
+        z-index: 999999;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader_overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba($color: #000, $alpha: 0.8);
+    z-index: 999999;
+    color: white;
+    display: none;
+
+    .loader_holder {
+        width: 100%;
+        height: 100vh;
+
+        i::before {
+            font-size: 50px;
+        }
+    }
+}
+
+.trip-tab {
+    .trip-second-section {
+        .footer_color.d-block {
+            width: 50%;
+
+            .triple_section_block {
+                .d-flex.justify-content-start.w-100 {
+                    div {
+                        width: 50%;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .trip-third-section {
+        .d-flex.justify-content-start.w-50 {
+
+            p.name.footer_color,
+            p.ml-2.email.footer_color {
+                width: 50%;
+            }
+        }
+    }
+}
+
+p.time {
+    color: #888;
+}
+
+.body_fixed {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.menu_overlay {
+    height: 100%;
+}
+
+#text-info-24 {
+    bottom: 65px !important;
+    display: none;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media(max-width:1023px) {
+    .thirteen_two {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: -40px 0 0 -40px !important;
+        cursor: pointer;
+
+        .thirteen_two_inner {
+            margin: 40px 0 0 40px !important;
+
+        }
+    }
+}
+
+
+
+@media(max-width:600px) {
+    .thirteen_two {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: -20px 0 0 -20px !important;
+        cursor: pointer;
+
+        .thirteen_two_inner {
+            margin: 20px 0 0 20px !important;
+
+        }
+    }
+}
+
+// @media (max-width:1260px) and (min-width:800px){
+//     .signin_form{
+//         .signin_form_main_block{
+//             width:90%;
+//         }
+//     } 
+//     .inward_menu_bottom .inward_menu_bottom_block .inward_main_block_holder .inward_menu_bottom_inner .thirteen .thirteen_two{
+//         grid-template-columns: 1fr 1fr 1fr;
+//         grid-gap: 10px;
+//     }
+// }
+// @media (max-width:767px) and (min-width:501px){
+//     .inward_menu_bottom .inward_menu_bottom_block .inward_main_block_holder .inward_menu_bottom_inner .thirteen .thirteen_two{
+//         grid-template-columns: 1fr 1fr 1fr 1fr;
+//         grid-gap: 10px;
+//     }
+// }
+// @media (max-width:799px) and (min-width:768px){
+//     .inward_menu_bottom .inward_menu_bottom_block .inward_main_block_holder .inward_menu_bottom_inner .thirteen .thirteen_two{
+//         grid-gap: 10px;
+//     }
+// }
+// /skybound-main/assets/frontend/css
+// /skybound-main/application/views/frontend/inbound
+// sudip_26_6_19
+.about_block,
+.contact_block {
+    margin-top: 65px;
+
+    h3 {
+        text-align: center;
+        color: $footer_color;
+        font-weight: 400;
+        position: relative;
+
+        &::after {
+            @include after_before;
+        }
+    }
+
+    p {
+        text-align: justify;
+        margin-bottom: 20px;
+        color: #454545;
+    }
+
+    .about_paragraph {
+        margin-top: 35px;
+    }
+
+    .input_field {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 65px;
+
+        .name_field {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 30px;
+        }
+    }
+}
+
+.form_input {
+    border: none;
+    border-radius: 0rem;
+    border-bottom: 1px solid rgb(221, 221, 221) !important;
+    padding: 0rem 0.75rem;
+}
+
+.form-control:focus {
+    border-color: none !important;
+    box-shadow: none;
+}
+
+.label_text {
+    margin-bottom: 0px;
+    color: rgb(221, 221, 221);
+}
+
+.form_textarea {
+    resize: none;
+}
+
+a.btn_red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_red {
+    width: 186px;
+    height: 45px;
+    padding: 0.8em 0.6em;
+    line-height: 24px;
+    font-size: 14px;
+    border-radius: 30px;
+    box-shadow: 0px 3px 5px #adaaaa !important;
+}
+
+.btn-danger {
+    background-color: $secondary_color !important;
+    border-color: $secondary_color !important;
+}
+
+.contact_block_holder {
+    margin-bottom: 65px;
+}
+
+.privacy_policy_block {
+    margin-top: 65px;
+
+    h3 {
+        text-align: center;
+        color: $footer_color;
+        font-weight: 400;
+        position: relative;
+
+        &::after {
+            @include after_before;
+        }
+    }
+
+    p {
+        text-align: justify;
+        margin-bottom: 20px;
+        color: #454545;
+    }
+
+    .p_and_p_paragraph {
+        margin-top: 35px;
+    }
+}
+
+.terms_condition_block {
+    margin-top: 65px;
+
+    h3 {
+        text-align: center;
+        color: $footer_color;
+        font-weight: 400;
+        position: relative;
+
+        &::after {
+            @include after_before;
+        }
+    }
+
+    p {
+        text-align: justify;
+        margin-bottom: 20px;
+        color: #454545;
+    }
+
+    .t_and_c_paragraph {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact_custom_button {
+        margin-bottom: 20px;
+    }
+
+    .about_block,
+    .contact_block,
+    .privacy_policy_block,
+    .terms_condition_block {
+        margin-top: 100px;
+    }
+
+    .input_field {
+        width: 90% !important;
+    }
+
+    .footer_block {
+        padding-top: 15px !important;
+    }
+
+    .contact_block_holder {
+        margin-bottom: 0px;
+    }
+
+    .P_and_c {
+        p {
+            position: unset !important;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .input_field {
+        width: 100% !important;
+
+        .name_field {
+            display: grid;
+            grid-template-columns: 1fr !important;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer_above .footer_above_inner .footer_above_inner_one {
+        height: unset;
+    }
+}
+
+// sudip_26_6_19
+.contact_input {
+    position: relative;
+}
+
+.contact_input .error {
+    left: 0;
+    bottom: -19px !important;
+}
+
+.contact_phone {
+    padding-left: 0.75rem !important;
+}
+
+.P_and_c {
+    position: relative;
+
+    p {
+        position: absolute;
+        left: 0;
+        color: $primary-color;
+        font-size: 12px;
+
+        a {
+            color: $primary-color;
+            font-size: 12px;
+        }
+    }
+}
+
+.bubble {
+    margin-top: 20px;
+}
+
+@media (max-width:760px) {
+    section.signin_form.thank_you_section {
+        padding: 0;
+
+        .inward_menu_bottom {
+            padding: 4em 0 2.5em;
+
+            .inward_menu_bottom_block {
+                p {
+                    margin: 0 !important;
+                }
+            }
+        }
+
+    }
+
+    .inward_menu_bottom .inward_menu_bottom_block .inward_main_block_holder .inward_menu_bottom_inner {
+        padding: 10px 25px 0px 25px;
+    }
+
+    .r_pay_opt {
+        position: relative;
+        text-align: center;
+        right: auto;
+        top: 0;
+        left: auto;
+        transform: unset;
+        margin: 0 auto;
+        justify-content: center !important;
+        padding-bottom: 0 !important;
+    }
+
+    .inward_menu_bottom .inward_menu_bottom_block .inward_main_block_holder .inward_menu_bottom_inner .thirteen .thirteen_one h3 {
+        text-align: center;
+    }
+
+    .inward_menu_bottom .inward_menu_bottom_block .inward_main_block_holder .inward_menu_bottom_inner .twelve .twelve_one h3 {
+        text-align: center;
+    }
+
+    .blue_header_form h5 {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .inward_menu_bottom .inward_menu_bottom_block .inward_main_block_holder .inward_menu_bottom_inner .inward_one_block .flight_number .flight_number_tel input[type="text"] {
+        padding: 0.6em 0.6em 0.6em 4.3em !important;
+    }
+
+    .inward_menu_bottom .inward_menu_bottom_block .inward_main_block_holder .outward_pickup_date_time .dublin_main_block_two_holder1 .airport_name .airport_name_holder input[type="text"] {
+        padding: 0.6em 0.6em 0.6em 4.3em !important;
+    }
+
+    .page-header,
+    section.trip_details_header.background_grey {
+        margin-top: 70px;
+    }
+
+    .inward_menu_bottom_inner .thirteen .input_with_icon_holder.mt-4.w-50 {
+        width: 100% !important;
+    }
+
+}
+.intl-tel-input.allow-dropdown {
+    border: 1px solid #d5d5d5;
+    border-right: 0;
+    border-radius: 18px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 20%;
+}
+@media (max-width:760px){
+    .intl-tel-input.allow-dropdown {
+        width: 40%;
+    }
+    .alert-danger{
+        margin-top:40px;
+    }
+}
